@@ -1,0 +1,349 @@
+/**************************************************************************
+ * #   #   #   ##   #  #  ###   ##   ##  ###       http://www.lyonesse.it *
+ * #    # #   #  #  ## #  #    #    #    #                                *
+ * #     #    #  #  # ##  ##    #    #   ##   ## ##  #  #  ##             *
+ * #     #    #  #  # ##  #      #    #  #    # # #  #  #  # #            *
+ * ###   #     ##   #  #  ###  ##   ##   ###  #   #  ####  ##    Ver. 1.0 *
+ *                                                                        *
+ * -Based on CircleMud & Smaug-     Copyright (c) 2001-2002 by Mithrandir *
+ * ********************************************************************** */
+
+CodeBase: Circle 3.0 bpl 19 & Smaug 1.4a
+
+Legenda:
+-       Done
+*       Working
+#       Todo
+
+--------
+Features
+--------
+
+- Changed room handling method from array to hash table with linked list (Smaug)
+
+- Exit handling with double linked list (Smaug)
+
+- Wilderness (see wilderness.txt)
+	- Added macros to handle room name, description, etc.;
+	- Added Survey command;
+	
+- Object handling with double linked list (Smaug)
+	- got LINK, UNLINK and INSERT macro from Smaug;
+	- replaced get_obj_in_list_vis() with get_obj_in_list_vis_rev() to
+	  mantain LIFO handling of objects in inventory, etc.;
+	  
+- Object count (Smaug)
+	- imported group_object() and split_obj() from Smaug;
+	- rewrote drop, get, give, put functions;
+	- obj_to_char, obj_to_obj and obj_to_vehicle return an OBJ_DATA pointer
+	  to handle object grouping.
+
+- Money as objects
+	[objects.c]
+	- Gold in bank is still a value;
+	- added to drop, get, give and put money handling;
+        
+- Ascii Playerfile & Objfile
+	[save.c]
+	- Rewrote functions to save & load ascii players and objects files;
+    - removed objsave.c;
+    - removed from db.c save_char(), load_char(), char_to_store(), store_to_char();
+        
+- Random Items Creation
+	[objrandom.c objrandom.h]
+	This code creates random objects of the given type.
+
+- Item Condition
+	[objects.c]
+	Item can be damaged and repaired
+
+- Furnitures
+	Now players can sit on chair, put objects on tables, etc.
+	- FIX - char_from_room() now checks for char_from_obj()
+
+- Introduction Code
+	[act.other.c]
+	When you meet an unknown player you don't see his name but only his
+	race and his class.
+	This is handled with a double linked list.
+	- added GREET command to introduce to other players;
+    - added FORGET command to forget someone;
+    - added KNOWINGS command to obtain a list of knowings;
+
+- Clan code
+	[clan.c clan.h fight.c]
+    # TODO # - Castles as clanhalls!
+                
+- Portal Stones
+	[wild.info.c]
+    With portal stones players can instantaneously travel to another portal stone
+    elsewhere in the world.
+    # TODO # - must place some stone around!!
+  
+- Increased max number of spells and skills      
+	[spells.h structs.h lib/etc/messages]
+
+- Global Weather System
+	[weather.c act.informative.c]
+	Added a simplified (but working!!) version of GreyHawkMud weather system.
+
+- Room Affections
+	[structs.h act.informative.c magic.c spells.h spell_parser.c constants.c constants.h]
+	Spells can be casted upon rooms.
+    - RAFF_LIST is the global linked list of affections;
+    - ROOM->AFFECTIONS is the linked list of affections in room;
+
+- Success()
+	[spell_parser.c]
+    Added a centralized function to check for success when casting a spell or
+    using a skill.
+
+- ImproveSkill()
+	[spell_parser.c]
+    Learn by usage.
+
+- Auto diagnose during fight
+	[fight.c]
+
+- Spell Memorization
+	[magic2.c]
+	Alternative magic system based upon memorizing spells.
+    - added spell_mem[MAX_SPELLS+1] in PLAYER_SPECIALS;
+    - added CLASS_SORCERER;
+
+- Item Specials
+    [structs.h]
+    Added a variable 'void *special' to OBJ_DATA to assing different special
+    data to objects. Added the following special structures:
+    - Spell books (flag ITEM_IS_SPELLBOOK) [see Spellbooks]
+    - Item spells (flag ITEM_HAS_SPELLS)   [see Item Spells]
+    - Trapped items (flag ITEM_HAS_TRAPS)  [see Trapped Items]
+        
+- Spellbooks
+	[magic2.c]
+	To memorize a spell sorcerers have to study their spellbooks.
+
+- Item Spells ( Enchant skill )
+	[magic2.c]
+   	It's possible to store spells into objects and cast spells thru objects.
+
+- Trapped Items
+	[obj_traps.c]
+	Objects can be trapped. Traps could be triggered by several actions.
+
+- Study & Copy skills
+	[magic2.c]
+	It's possible to study items, scrolls, staves and wands to learn or
+	improve spells knowledge.
+
+- Item FAST_MAGIC
+	[structs.h limits.c magic2.c]
+	These items are furnitures that increase mana regain or allow for
+	instant memorization of spells.
+
+- Triggered Events for Rooms
+	[room_triggers.c]
+	Events can be attached to rooms and be triggered by several actions;
+
+- Hunt code
+	[graph.c structs.h act.offensive.c mobact.c act.informative.c]
+    Mob can hunt Player, and vice versa.
+
+- Smart Mob Fighting
+    [mobact.c]
+    During fights, mobs will switch to fight the less powerful opponent.
+        
+- Moon Phases
+	[structs.h weather.c db.c]
+
+- Ranged Weapon
+	[act.item.c act.offensive.c fight.c]
+	Added ranged weapons (bows, slings, crossbows)	
+    - Implemented projectile containers. It's no longer needed to hold the
+      missile, it will be automatically loaded from container.
+    - attacked mob will flee or move and attack.
+    # TODO # - hmmmm.. create special code for sentinels and other mobs...
+
+- Ranged spell
+	[spells.h spell_parser.c magic.c]
+	Like ranged weapons, players can cast spells that affect mobs/players
+	in adjacents rooms.
+    - attacked mob will flee or move and attack.
+
+- Kills and Death counter
+	[structs.h fight.c act.informative.c]
+
+- Remort Code
+	[structs.h class.c]
+	After reaching level 30, player can start over in another class. They
+	retain all skills and ability points, but start with fresh hp, mana a
+	movement points.
+	
+- New Death System
+	Wher players die they no longer leave a corpse on the soil, but became
+	ghosts and are transferred into the Labyrinth of The Dead. To return
+	in the world of flesh they must be resurrected by one of the two
+	labyrinth's guardians.
+	- If a player quit while GHOST, he loose all eq.
+    # TODO - make spell "resurrect" for other player use.
+
+# Trophy code [USELESS]
+	[act.other.c]
+	Player can take head from corpses of other players. Useless with the
+	new death system. Maybe usable for PK or Clan Wars???????? hmmmmmmmmm
+
+- Hidden doors
+	[structs.h act.informative.c act.movement.c utils.c]
+	Some exits could be hidden and must be found with "search".
+	- added SEARCH skill;
+
+- Weapon Proficiencies
+
+- Buildings
+	[buildings.c]
+	Player can build buildings of various type.
+	# TODO - must must must limit building in standard zone!!!!
+	- buildings can be attacked and damaged;
+    - added command REPAIR do repair damaged buildings;
+    # TODO - Castle template!!!!
+    # TODO - casting spells upon buildings!!!
+
+- Stables
+    [spec_procs.c stables.c]
+	Special type of buildings where mounts and vehicles can be saved.    
+    - Implemented selling of mounts and vehicles.
+
+- Ships & Navigation
+	[wild.ships.c]
+	Players can buy ships and sail the seas.
+    - added code for sea courses;
+    # TODO - write documentation!!!!!!!!!!
+
+- Vehicles
+    [vehicles.c]
+    Players can buy vehicles to carry people or goods. Certain vehicles
+    need yoked mobiles to move.
+    - added saving vehicles in stables.
+    - added CHARGE command to load goods into vehicles;
+    - vehicles can be attacked and damaged;
+    - updated REPAIR command to handle vehicle repairing;
+    - updated CAMP command to save vehicles and mounts when a player quit in
+      a camp in the wilderness;
+    # TODO - casting spells upon vehicles!!!
+
+- Economy and Trading module (by Ardoz)
+    [economy.c goods.c]
+    (see economy.doc)		[missing english version!!! sigh!]
+    - added goods, markets and trading posts;
+    - added market affections;
+    - added MARKETS command to display info on markets;
+    - added option INFO to MARKETS command to display info about production and
+      prices in every markets;
+
+- Encounter Charts
+	[wild.life.c]
+	Handle mob random encounter in the wilderness.
+    
+
+-----------------------------------------------------------------------------
+:Snippets:
+-----------------------------------------------------------------------------
+
+- Events
+        [structs.h comm.c events.c queue.c]
+
+- Gestione dei colori con &
+        [comm.c e screen.h]
+
+- Keywords abbreviation ('get swo' for 'get swordwithaverylongname')
+        [handler.c]
+
+- Sorted Who
+        [act.informative.c]
+
+- Mob Stacking
+        [act.informative.c]
+
+- Bragging mobs
+        [mobact.c]
+        
+- Maze Generation
+        [db.c]
+
+- Line Input
+        [interpreter.c]
+
+- Saving Throws & THACO Formulaes
+        [class.c]
+
+- Mount system
+        [act.informative.c act.movement.c handler.c spell_parser.c spells.h structs.h utils.h]
+
+- Weapon spells
+        [structs.h fight.c magic.c oedit.c genobj.c]
+
+- Killing same mobs have XP penalties
+        [structs.h utils.h limits.c fight.c act.informative.c]
+
+- Shop saving non-producing items.
+        [shop.c db.c]
+
+- SpecProcs names
+        [spec_procs.c]
+        
+- Count char items
+        [utils.c]
+
+- User Counter
+        [interpreter.c]
+
+- Newbie Equipment
+        [class.c]
+
+- Races
+        [structs.h class.c act.informative.c act.other.c save.c]
+        - Added Humans, Elves and Dwarfs;
+
+- Knock on Door
+        [act.other.c]
+        
+- Roll Stats
+        [class.c interpreter.c]
+
+- Room/Object descriptions Parser
+        [parser.c act.informative.c]
+
+
+-----------------------------------------------------------------------------
+:Spells & Skills:
+-----------------------------------------------------------------------------
+SPELL_WALL_OF_FOG
+SPELL_ROOM_SHIELD
+SPELL_MINOR_TRACK
+SPELL_MAJOR_TRACK
+SPELL_SHIELD
+SPELL_STONE_SKIN
+SPELL_PARALYSIS
+SPELL_REFRESH
+SPELL_INCENDIARY_CLOUD
+SPELL_FIRESHIELD
+SPELL_FLASH
+SPELL_ACID_ARROW
+SPELL_REGENERATION
+SPELL_SHOCKWAVE
+SPELL_FEAR
+
+SKILL_RIDING                            All
+SKILL_TAME                              Warriors & Thiefs
+SKILL_STUDY                             Cleric, Magic Users & Sorcerers
+SKILL_READ_MAGIC                        Cleric, Magic Users & Sorcerers
+SKILL_ENCHANT_ITEMS                     Sorcerers
+SKILL_WEAPON_BOW
+SKILL_WEAPON_SLING
+SKILL_WEAPON_CROSSBOW
+SKILL_WEAPON_SWORDS
+SKILL_WEAPON_DAGGERS
+SKILL_WEAPON_WHIPS
+SKILL_WEAPON_TALONOUS_ARMS
+SKILL_WEAPON_BLUDGEONS
+SKILL_WEAPON_EXOTICS

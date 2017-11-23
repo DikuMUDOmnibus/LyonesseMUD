@@ -1,0 +1,215 @@
+#0
+The Stern~
+   You are astern.
+~
+0 31
+D0
+You see the midship.
+~
+~
+0 -1 1
+S
+#1
+The Midship~
+   You are amidship.
+~
+0 32
+D0
+You see the midship.
+~
+~
+0 -1 2
+D2
+You see the Stern.
+~
+~
+0 -1 0
+S
+#2
+The Midship~
+   You are amidship.
+~
+0 32
+D0
+You see the Bow.
+~
+~
+0 -1 3
+D2
+You see the midship.
+~
+~
+0 -1 1
+S
+#3
+The Bow~
+   You are at the bow.
+~
+0 33
+D2
+You see the Midship.
+~
+~
+0 -1 2
+D5
+You see the underdeck.
+~
+~
+0 -1 4
+S
+#4
+The Hallway~
+   You are in a hallway underdeck.
+~
+0 34
+D0
+You see the door of the hold.
+~
+~
+0 -1 5
+D1
+You see the door of a cabin.
+~
+~
+0 -1 6
+D2
+You see the second hallway.
+~
+~
+0 -1 8
+D3
+You see the door of a cabin.
+~
+~
+0 -1 7
+D4
+You see the bow.
+~
+~
+0 -1 3
+S
+#5
+The Hold~
+   You are in the Hold.
+~
+0 36
+D2
+You see the hallway.
+~
+~
+0 -1 4
+S
+#6
+A Cabin~
+   You are in a small underdeck cabin.
+~
+0 35
+D3
+You see the hallway.
+~
+~
+0 -1 4
+S
+#7
+A Cabin~
+   You are in a small underdeck cabin.
+~
+0 35
+D1
+You see the hallway.
+~
+~
+0 -1 4
+S
+#8
+The second Hallway~
+   You are in the second hallway underdeck.
+~
+0 34
+D0
+You see the hallway.
+~
+~
+0 -1 4
+D1
+You see the door of a cabin.
+~
+~
+0 -1 9
+D2
+You see the third hallway.
+~
+~
+0 -1 11
+D3
+You see the door of a cabin.
+~
+~
+0 -1 10
+S
+#9
+A Cabin~
+   You are in a small underdeck cabin.
+~
+0 35
+D3
+You see the second hallway.
+~
+~
+0 -1 8
+S
+#10
+A Cabin~
+   You are in a small underdeck cabin.
+~
+0 35
+D1
+You see the second hallway.
+~
+~
+0 -1 8
+S
+#11
+The third Hallway~
+   You are in the third hallway underdeck.
+~
+0 34
+D0
+You see the second hallway.
+~
+~
+0 -1 8
+D1
+You see the door of a cabin.
+~
+~
+0 -1 12
+D3
+You see the door of a cabin.
+~
+~
+0 -1 13
+S
+#12
+A Cabin~
+   You are in a small underdeck cabin.
+~
+0 35
+D3
+You see the third hallway.
+~
+~
+0 -1 11
+S
+#13
+A Cabin~
+   You are in a small underdeck cabin.
+~
+0 35
+D1
+You see the third hallway.
+~
+~
+0 -1 11
+S
+$

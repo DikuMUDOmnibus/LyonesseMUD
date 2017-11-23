@@ -1,0 +1,459 @@
+/**************************************************************************
+ * #   #   #   ##   #  #  ###   ##   ##  ###       http://www.lyonesse.it *
+ * #    # #   #  #  ## #  #    #    #    #                                *
+ * #     #    #  #  # ##  ##    #    #   ##   ## ##  #  #  ##             *
+ * #     #    #  #  # ##  #      #    #  #    # # #  #  #  # #            *
+ * ###   #     ##   #  #  ###  ##   ##   ###  #   #  ####  ##    Ver. 1.0 *
+ *                                                                        *
+ * -Based on CircleMud & Smaug-     Copyright (c) 2001-2002 by Mithrandir *
+ * ********************************************************************** */
+
+CodeBase di partenza: Circle 3.0 bpl 19 e Smaug 1.4a
+
+Legenda:
+-       Fatto
+*       In Lavorazione
+#       Da Fare
+
+---------------
+Implementazioni
+---------------
+
+- Convertita la gestione delle stanze da array a tabella hash con linked list (Smaug like)
+    [tutti i files]
+        Tutte le chiamate a world[] sono state sostituite con chiamate
+        alla funzione get_room();
+        I loop da 0 a top_of_world sono stati sostituiti con loop sulla
+        tabella hash;
+        Nella struttura char_data non c'e' piu' il numero della stanza ma
+        un puntatore alla stanza stessa;
+
+- Gestione delle uscite con doppia linked list (Smaug like)
+    [structs.h db.c utils.c act.movement.c genwld.c redit.c + varie cose in altri files]
+    Non c'e' piu' limite alle uscite da una stanza.. sono possibili
+    anche + uscite in una stessa direzione.
+
+- Wilderness (see wilderness.txt)
+        [wilderness.c structs.h utils.h]
+        Gestione totalmente dinamica di stanze, settori wild e mappa ascii..
+        - Aggiunte un sacco di macro per gestire nomi, descrizioni e coordinate..
+        - Aggiunto comando Survey
+
+- Gestione liste oggetti con doppia linked list (Smaug like)
+        [structs.h + vari..]
+        Le liste di oggetti trasportati, presenti nelle stanze o
+        dentro altri oggetti ora sono gestite tramite una doppia linked
+        list (first_content e last_content per stanze e contenitori,
+        first_carrying e last_carrying per i giocatori/mob) e con doppio
+        puntatore ai nodi (next_content e prev_content);
+        - Importate le macro LINK, UNLINK e INSERT da Smaug;
+        - fixed: sostituite tutte le chiamate a get_obj_in_list_vis() con
+          get_obj_in_list_vis_rev() per mantenere la gestione LIFO degli
+          oggetti dato che le nuove funzioni aggiungono gli oggetti in
+          fondo alle liste e non piu' in testa.
+
+- Object count (Smaug like)
+        [structs.h act.item.c objects.c handler.c + altri..]
+        - implementate funzioni per riunire (group_object()) e separare
+          (split_obj()) oggetti uguali. In questo modo se un pg ha
+          10 pozioni di cura, non vengono creati 10 oggetti diversi ma
+          un solo oggetto con valore count = 10, con un notevole risparmio
+          di memoria nonche' una semplificazione nella gestione di piu'
+          copie dello stesso oggetto in visualizzazione, gestione, ecc;
+        - Gli oggetti raggruppati vengono estratti (extract_obj());
+        - Quando una di questi oggetti viene usato, il codice lo separa
+          dagli altri uguali, decrementando il valore count e creando
+          un nuovo oggetto con count = 1;
+        - riscritte le varie funzioni di manipolazioni di oggetti
+          (drop, get, give, put);
+        - FIX - ora le funzioni obj_to_char, obj_to_obj e obj_to_room
+          hanno come valore di ritorno OBJ_DATA* e non piu' void, e ritornano
+          o l'oggetto oppure l'oggetto con cui sono stati raggruppati. Questo
+          per evitare che, in caso di raggruppamento, ulteriori riferimenti
+          all'oggetto abbiano un puntatore non valido;
+
+- Monete
+        [structs.h objects.c]
+        Le monete vengono ora gestite come oggetti e non piu' come un valore
+        di una variabile. L'oro di un giocatore e' sempre un singolo oggetto,
+        la quantita' di monete e' data dal valore della var. value[0]
+        dell'oggetto, questo per evitare di considerare 1000 monete d'oro come
+        1000 oggetti diversi.
+        Il valore gold rimane invece per i mob, onde evitare di creare migliaia
+        di oggetti al boot. L'oro viene "convertito" in oggetto quando un mob
+        viene ammazzato.
+        L'oro in banca resta come prima.
+        - Aggiunte funzioni di creazione e aggiornamento monete
+        - Inserita nelle funzioni di manipolazioni degli oggetti (get, drop, ecc)
+          la gestione delle monete.
+        - FIX - sistemato il calcolo del peso per gli ITEM_MONEY
+        
+- Ascii Playerfile & Objfile
+        [structs.h, save.c + tanti altri]
+        Riscritta la gestione dei salvataggi dei giocatori e dei loro oggetti
+        usando file ascii invece che binari.
+        - eliminato objsave.c
+        - eliminate da db.c le funzioni save_char, load_char, char_to_store,
+          store_to_char
+        - riscritte le funzioni per gestire la tabella dei giocatori
+        - modificato tutto il codice che usava le funzioni Crash_xxxxx per
+          usare le nuove funzioni.
+        
+- Creazione random di oggetti
+        [objrandom.c objrandom.h structs.h db.c]
+        Crea oggetti del tipo specificato in modo casuale, magici e non
+        - Aggiunti nuovi comandi per Zone, per caricare gli oggetti random
+
+- Item Condition
+        [structs.h objects.c fight.c act.informative.c]
+        Item can be damaged and repaired
+
+- Oggetti di Mobilia (Furnitures)
+        [act.movement.c + vari]
+        Implementati i mobili. Ora un pg puo' sedersi su una sedia, 
+        sdraiarsi su un letto o posare/prendere oggetti da un tavolo.
+        - FIX - char_from_room() ora controlla e se necessario chiama
+                char_from_obj()
+
+- Introduction Code
+        [structs.h act.other.c act.informative.c + vari]
+        Se non si conosce un giocatore, non viene visualizzato il nome ma
+        solo la classe e la razza;
+        La gestione delle "conoscenze" viene fatta tramite una doppia
+        linked list KNOWN_DATA, manipolata dalle funzioni in act.other.c
+        ( is_known_char(), add_known(), etc.)
+        - Introdotto comando GREET per presentarsi
+        - Introdotto comando FORGET per "dimenticarsi" qualcuno
+        - Introdotto comando KNOWINGS per avere un elenco delle conoscenze
+
+- Clan code
+        [clan.c clan.h fight.c]
+        #TODO# - Gestire edifici Clanhall
+                
+- Pietre Portali
+        [wild.info.c]
+        Implementate le pietre portali che consentono di viaggiare da una
+        pietra all'altra in modo istantaneo.
+        #TODO# - Seminare un po' di pietre qua e la'
+        
+- Incrementato numero max di spells & skills
+        [spells.h structs.h lib/etc/messages]
+
+- Sistema Atmosferico Globale
+        [weather.c act.informative.c]
+        Implementata una versione semplificata MA funzionante del sistema atmosferico
+        del mud GreyHawk
+
+- Gestione delle affections alle room
+        [structs.h act.informative.c magic.c spells.h spell_parser.c constants.c constants.h]
+        Riscritta parzialmente per gestire meglio le stanze.. ora le Room Affections sono
+        salvate in due liste, una globale per tutto il mondo, e una locale interna alla
+        stanza.
+        RAFF_LIST e' la lista globale
+        ROOM->AFFECTIONS e' la lista interna alla struttura ROOM_DATA
+        sono state riscritte alcune funzioni per avere la sicurezza che quando un'affections
+        viene inserita in una lista sia inserita anche nell'altra.. stesso discorso per la
+        rimozione..
+        inoltre le ROOM_AFFECT settano anche i corrispondenti bitvector ( RAFF_xxx )
+        nella variabile room_data->room_aff (impostate anche le macro ROOM_AFFS e ROOM_AFFECTED
+        in utils.h.
+
+- Success()
+        [spell_parser.c]
+        funzione per effettuare i check sull'uso di skill e spell
+
+- ImproveSkill()
+        [spell_parser.c]
+        funzione che, in caso di successo nell'uso di una spell/skill,
+        puo' aumentare la conoscenza di quella spell/skill del personaggio
+
+- Auto diagnose during fight
+        [fight.c]
+        Durante il combattimento mostra lo stato di salute dell'avversario
+
+- Memorizzazione Incantesimi
+        [structs.h magic2.c]
+        Nuovo sistema magico basato sulla memorizzazione di incantesimi;
+        (aggiunta var. spell_mem[MAX_SPELLS+1] a player_specials
+
+- Item Specials
+        [structs.h]
+        associata alla struttura obj_data una variabile 'void *special' per assegnare
+        agli oggetti dati speciali di diversa natura;
+        Implementati:
+        - Spell books (flag ITEM_IS_SPELLBOOK) [v. Spellbooks]
+        - Item spells (flag ITEM_HAS_SPELLS)   [v. Item Spells]
+        - Trapped items (flag ITEM_HAS_TRAPS)  [v. Trapped Items]
+        
+- Spellbooks
+        [magic2.c]
+        Implementati i libri di incantesimi per gli stregoni; per poter memorizzare
+        un incantesimo e' necessario che sia presente nel libro.
+
+- Trapped Items
+        [structs.h obj_traps.c act.item.c act.movement.c]
+        Consente di associare ad oggetti effetti nocivi per i giocatori
+        in risposta ad azioni quali get, drop, use, ecc.
+
+- Item Spells ( Enchant skill )
+        [struct.h magic2.c]
+        Ora e' possibile associare incantesimi agli oggetti
+        (es. weapon spells)
+
+- Study & Copy skills
+        [magic2.c]
+        E' possibile studiare oggetti magici per apprendere o migliorare
+        i propri incantesimi
+
+- Item FAST_MAGIC
+        [structs.h limits.c magic2.c]
+        furnitures che aumentano il mana regain o consentono di
+        memorizzare immediatamente una spell
+
+- Triggered Events for Rooms
+        [structs.h db.c room_triggers.c + vari]
+        Consente di associare alle stanze degli eventi che hanno luogo
+        in risposta a determinate azioni compiute nella stanza dai
+        giocatori/mob.
+
+- Stalle
+        [structs.h spec_procs.c stables.c]
+        Stalle dove salvare le cavalcature ed i veicoli
+        - Implementata vendita di cavalcature e veicoli
+
+- Hunt code
+        [graph.c structs.h act.offensive.c mobact.c act.informative.c]
+        Gestione completa del track.
+        Mob possono dare la caccia ai pc.
+
+- Smart Mob Fighting
+        [mobact.c]
+        Durante il combattimento, i mob cercheranno di attaccare l'elemento
+        piu' debole tra quelli che lo stanno combattendo.
+        (funzione check_switch_opponent())
+        
+- Moon Phases
+        [structs.h weather.c db.c]
+
+- Ranged Weapon
+        [act.item.c act.offensive.c fight.c + altri]
+        Armi che possono colpire a distanza (archi, fionde, balestre)
+        - Implementati i contenitori di proiettili: ora non occorre
+          piu' holdare il proiettile ma basta averlo nell'apposito
+          contenitore (faretra, sacco o custodia)
+        - il mob attaccato a distanza o scappa o arriva e attacca il pc
+
+- Ranged spell
+        [spells.h spell_parser.c magic.c]
+        Spells che possono avere come bersaglio mob/pc in stanze adiacenti
+        - il mob attaccato a distanza o scappa o arriva e attacca il pc
+
+- Kills and Death counter
+        [structs.h fight.c act.informative.c]
+        Tiene conto delle uccisioni e delle morti dei giocatori.
+
+- Remort Code
+        [structs.h class.c]
+        I giocatori, raggiunto il 30^ livello, possono ricominciare dal primo
+        livello in un'altra classe. Mantengono tutti gli skills e le spells
+        che gia' hanno, ma non potranno usarle finche' non raggiungono il
+        livello minimo necessario.
+        I punteggi delle abilita' (STR, DEX, ecc) restano invariati.
+        HP, MANA e MOVE e anche l'EXP invece vengono resettati.
+        
+- New Death System
+        I giocatori, quando vengono "uccisi", non lasciano piu' un corpo nella
+        stanza, ma vengono flaggati come PLR_GHOST e trasferiti nel Labirinto.
+        Solo quando arriveranno all'uscita del labirinto, troveranno un mob
+        guardiano che li resuscita e li fa uscire.
+        - Se quittano mentre sono Ghost perdono l'eq e quando rientrano vengono
+        rispediti nel labirinto.
+        - fatto mob "resuscitatore".
+        # TODO - fare spell "resurrect" per resuscitare al volo i giocatori.
+
+# Trophy code
+        [act.other.c]
+        I giocatori possono prendere la testa dai corpi di altri giocatori.
+        # INUTILE con il nuovo Death System..... hmmmmm hmmmmm hmmmmm
+
+- Hidden doors
+        [structs.h act.informative.c act.movement.c utils.c]
+        Le uscite possono essere nascoste e devono essere trovate con "search".
+
+- Weapon Proficiencies
+        [spells.h spell_parser.c fight.c]
+
+- Edifici
+        [structs.h buildings.c]
+        I giocatori possono costruire edifici di vario tipo, sia nella wilderness
+        sia nelle aree normali (!!!limitare!!!)
+        - gli edifici possono essere attaccati e danneggiati
+        - implementato comando per riparare gli edifici
+        - implementato collegamento con clan x clanhall
+        # TODO - fare template per "Castello"
+        # TODO - spells castabili su edifici
+
+- Navigazione
+        [wild.ships.c]
+        I giocatori possono acquistare navi di vario tipo per navigare nei mari,
+        esplorare e commerciare.
+        - navigazione sui mari
+        - tipologie di navi
+        - rotte
+        # TODO - scrivere documentazione!!!
+
+- Veicoli
+        [structs.h vehicles.c act.informative.c act.item.c act.movement.c stables.c]
+        I giocatori possono acquistare (nelle stalle) veicoli di vario tipo per
+        trasportare merci e persone.
+        - Implementati i veicoli
+        - Implementato il salvataggio dei veicoli in stalle
+        - Implementato l'aggiogare mob ai veicoli per trainare
+        - Implementato il caricare merce nel veicolo
+        - Giocatori e Mob possono entrare dentro un veicolo
+        - Attaccare un veicolo
+        - Danneggiare un veicolo
+        - Riparare un veicolo
+        - Quando un giocatore si accampa nella wild il veicolo viene salvato
+        # TODO - spells castabili su veicoli
+
+- Sistema Economico e Sistema Commerciale
+        [structs.h goods.c economy.c]
+        (vedere "sistema economico.doc"
+        - merci, mercati e posti di scambio
+        - sistema economico "sotterraneo" indipendente dai pg
+        - pg comprano e vendono merci
+        - implementate affections sui mercati che influenzano prezzo e produzione
+        - aggiunto comando MARKETS per avere informazioni sui mercati;
+        - aggiunta opzione INFO al comando MARKETS per avere informazioni sulla
+          situazione della produzione e dei prezzi dei vari mercati;
+
+- Mob Encounter Table in Wilderness
+        [structs.h wild.life.c]
+        gestione incontri casuali di mob nei settori wild.
+
+# Tarare i prezzi di edifici, navi e veicoli in base al sistema economico/commerciale
+
+-----------------------------------------------------------------------------
+:Snippets:
+-----------------------------------------------------------------------------
+
+- Eventi
+        [structs.h comm.c events.c queue.c]
+
+- Gestione dei colori con &
+        [comm.c e screen.h]
+
+- Gestione delle abbreviazioni nelle keywords
+        [handler.c]
+
+- Who sortato x livello
+        [act.informative.c]
+
+- Stacking per mob
+        [act.informative.c]
+
+- Bragging mobs
+        [mobact.c]
+        
+- Generazione casuale di labirinti
+        [db.c]
+        funzione make_maze() modificata per lavorare con la nuova gestione hash delle stanze
+        e delle uscite
+
+- Line Input
+        [interpreter.c]
+        Snippet che permette di poter fare domande ai giocatori
+        e gestirne le risposte senza dover definire N-mila nuovi
+        stati CON_xxxx.
+        ( es. Sei sicuro di voler mangiare la torta (Si/No) ? )
+
+- Saving Throws & THACO Formulaes
+        [class.c]
+        Eliminate quelle lunghissime liste di valori, sostituite con
+        delle formule
+
+- Mount system
+        [act.informative.c act.movement.c handler.c spell_parser.c spells.h structs.h utils.h]
+        Cavalcature
+
+- Weapon spells
+        [structs.h fight.c magic.c oedit.c genobj.c]
+        Armi che in combattimento usano incantesimi
+
+- Killing same mobs have XP penalties
+        [structs.h utils.h limits.c fight.c act.informative.c]
+        Tiene conto degli ultimi 100 mob ammazzati da un giocatore, dando
+        penalita' sugli XP guadagnati sulle morti di quei mob. Serve per
+        evitare che i giocatori uccidano sempre gli stessi mob.
+
+- Shop saving non-producing items.
+        [shop.c db.c]
+        Allows the saving of items given/sold to shopkeepers who normally
+        do not load or "produce" the items.
+
+- SpecProcs names
+        [spec_procs.c]
+        
+- Count char items
+        [utils.c]
+        This is a simple drop-in tid-bit of code that returns the number of items
+        that someone is in possession of. (recursive for containers)
+
+- User Counter
+        [interpreter.c]
+        Conta quanti giocatori si sono collegati al mud.
+
+- Newbie Equipment
+        [class.c]
+        Ai nuovi giocatori vengono dati alcuni oggetti.
+
+- Razze
+        [structs.h class.c act.informative.c act.other.c save.c]
+        Razze per i giocatori (Umani, Elfi e Nani).
+
+- Knock on Door
+        [act.other.c]
+        Si puo' bussare. :-)
+        
+- Roll Stats
+        [class.c interpreter.c]
+        Rollaggio del punteggio delle abilita'.
+
+- modulo per le descrizioni multiple di stanze/oggetti
+        [parser.c act.informative.c]
+
+
+-----------------------------------------------------------------------------
+:Spells & Skills:
+-----------------------------------------------------------------------------
+SPELL_WALL_OF_FOG
+SPELL_ROOM_SHIELD
+SPELL_MINOR_TRACK
+SPELL_MAJOR_TRACK
+SPELL_SHIELD
+SPELL_STONE_SKIN
+SPELL_PARALYSIS
+SPELL_REFRESH
+SPELL_INCENDIARY_CLOUD
+SPELL_FIRESHIELD
+SPELL_FLASH
+SPELL_ACID_ARROW
+SPELL_REGENERATION
+SPELL_SHOCKWAVE
+SPELL_FEAR
+
+SKILL_RIDING                            All
+SKILL_TAME                              Warriors & Thiefs
+SKILL_STUDY                             Cleric, Magic Users & Sorcerers
+SKILL_READ_MAGIC                        Cleric, Magic Users & Sorcerers
+SKILL_ENCHANT_ITEMS                     Sorcerers
+SKILL_WEAPON_BOW
+SKILL_WEAPON_SLING
+SKILL_WEAPON_CROSSBOW
+SKILL_WEAPON_SWORDS
+SKILL_WEAPON_DAGGERS
+SKILL_WEAPON_WHIPS
+SKILL_WEAPON_TALONOUS_ARMS
+SKILL_WEAPON_BLUDGEONS
+SKILL_WEAPON_EXOTICS

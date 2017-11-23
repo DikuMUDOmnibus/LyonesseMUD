@@ -1,0 +1,294 @@
+/**************************************************************************
+ * #   #   #   ##   #  #  ###   ##   ##  ###       http://www.lyonesse.it *
+ * #    # #   #  #  ## #  #    #    #    #                                *
+ * #     #    #  #  # ##  ##    #    #   ##   ## ##  #  #  ##             *
+ * #     #    #  #  # ##  #      #    #  #    # # #  #  #  # #            *
+ * ###   #     ##   #  #  ###  ##   ##   ###  #   #  ####  ##    Ver. 1.0 *
+ *                                                                        *
+ * -Based on CircleMud & Smaug-     Copyright (c) 2001-2002 by Mithrandir *
+ * ********************************************************************** */
+
+=========================
+Dynamic Wilderness Module
+=========================
+
+La gestione dinamica della wild e' formata da quattro parti interdipendenti:
+
+- le coordinate
+- le stanze
+- i settori wild
+- la mappa del giocatore
+
+L'occupazione PREVISTA di memoria di un LyonesseMUD con la mappa standard di
+2000x2000 dovrebbe essere compresa tra un minimo di 10/11 Mb ed un massimo
+"pratico" di 30/35 Mb. Difatti, dato che il caricamento di settori wild dipende
+in massima parte dalla presenza dei giocatori, non ci sono limiti teorici alla
+memoria che puo' essere impiegata.
+
+La cartella che contiene i files della wild e': \lyonesse\lib\world\wls
+
+I files della wild sono:
+
+lyonesse.bmp            la mappa grafica del mondo
+mappa.wls               la conversione ascii della mappa grafica
+sectors.wls             contiene i nomi, le descrizioni ed i simboli grafici
+                        dei vari tipi di settore (field, forest, hills, ecc)
+
+la cartella map contiene i 10000 files .map in cui e' stata scomposta la mappa
+ascii. Ciascuno di questi files corrisponde ad un Settore Wild.
+
+la cartella life contiene i files .life in cui sono memorizzate le tabelle
+per gli incontri casuali.
+
+
+----------
+Coordinate
+----------
+
+Le coordinate sono assolute, e variano da 0 a WILD_n (e' possibile
+specificare dimensioni della mappa diverse per le Y e le X ).
+
+Il punto 0 0 e' l'angolo in alto a sinistra del mondo. Il nord e' l'alto, il
+sud il basso, l'est la destra e l'ovest la sinistra.
+
+I movimenti a Nord  comportano un DECREMENTO della coordinata Y.
+I movimenti a Sud   comportano un INCREMENTO della coordinata Y.
+I movimenti a Ovest comportano un DECREMENTO della coordinata X.
+I movimenti a Est   comportano un INCREMENTO della coordinata X.
+
+Gli altri movimenti ( NW, NE, SW, SE ) comportano entrambi i mutamenti.
+
+L'unica struttura a cui sono associate le coordinate e' quella delle stanze.
+Oggetti, Mob, Navi e Veicoli NON HANNO coordinate, ma assumono quelle della
+stanza in cui si trovano.
+
+Gli Edifici hanno le coordinate, esclusivamente per la loro localizzazione ed
+il loro caricamento al boot.
+
+
+------
+Stanze
+------
+
+Le stanze wild sono stanze normali che vengono caricate in memoria solo
+quando servono e scaricate quando non servono piu'.
+
+Queste stanze, al momento della loro creazione, vengono assegnate alla zona
+virtuale WILD_ZONE.
+
+Quando vengono caricate, queste stanze NON vengono aggiunte alla tabella hash
+delle stanze normali, bensi' vengono collocate in una tabella hash
+bidimensionale ad hoc.
+
+E' importante sottolineare che non occorre NESSUNA modifica al codice base
+per gestire qualunque azione nella wild, dato che le stanze sono a tutti gli
+effetti stanze "vere", e vengono trattate dal codice esattamente come le
+altre.
+
+L'unica modifica fatta al codice base e' nella funzione get_exit(). Infatti
+e' in questa funzione che, data una direzione di movimento, il codice deve, se
+non e' gia' presente, caricare in memoria la necessaria stanza wild.
+
+Questa e' una parte importante, percio' la analizzo in dettaglio.
+
+Il codice in get_exit() prima cerca un'uscita dalla stanza attuale nella
+direzione desiderata. Se non ne trova, e se la zona in cui ci troviamo e' la
+WILD_ZONE, il codice calcola le coordinate della stanza di destinazione in
+base alle coordinate della stanza di origine ed alla direzione.
+
+Se le coordinate calcolate sono valide (ovvero se non corrispondo a stanze
+speciali in cui non e' possibile spostarsi come mura, ecc.), verifica se
+a queste coordinate e' presente una stanza wild gia' caricata effettuando una
+ricerca nella tabella hash della wild (che e' indicizzata bidimensionalmente
+dalle coordinate Y e X).
+
+Se la stanza non e' presente, viene inizializzata una nuova stanza, viene
+assegnata a queste coordinate e vengono create le corrispondenti uscite
+per collegare le due stanze.
+
+Questo dinamismo di creazione delle uscite e delle stanze e' il fondamento
+del funzionamento della wilderness.
+
+Un caso particolare riguarda le stanze che contengono le uscite su zone
+standard. Difatti, per evitare calcoli pesanti e nella maggior parte dei
+casi inutili nella funzione get_exit(), al boot vengono automaticamente
+create sia la stanza che contiene l'uscita vera e propria, sia le otto
+stanze adiacenti all'uscita. Questo serve per preimpostare le uscite da
+queste otto stanze NON alla stanza wild ma alla stanza della zona.
+Inoltre, uscendo dalla zona nella wild, il giocatore non verra' MAI
+posizionato nella stanza wild che contiene l'uscita, ma in quella delle otto
+adiacenti corrispondente alla direzione di movimento. Di fatto la stanza
+wild "fisica" che contiene l'uscita e' totalmente inaccessibile.
+
+
+I criteri di caricamento di una stanza possono essere:
+
+- il movimento di un giocatore/mob nelle coordinate di quella stanza;
+- il caricamento di un oggetto alle coordinate di quella stanza;
+- il caricamento di un edificio alle coordinate di quella stanza;
+- il caricamento di una nave alle coordinate di quella stanza;
+- il caricamento di locazioni particolari alle coordinate di quella stanza;
+
+Per essere scaricata, una stanza DEVE essere vuota, ovvero non devono
+trovarvisi:
+
+- giocatori/mob
+- oggetti
+- navi
+- edifici
+- veicoli
+- incantesimi attivi sulla stanza
+- eventi
+
+Inoltre, non verranno scaricate tutte quelle stanze che contengono uscite su
+aree standard, oltre alle otto stanze adiacenti l'uscita.
+
+Se da un lato questo comporta un incremento dell'uso della memoria, seppur
+limitato, dall'altro semplifica molto la vita. :-))
+
+Il tempo di elaborazione non e' avvertibile (inferiore al secondo).
+
+
+------------
+Settori Wild
+------------
+
+Ciascun settore wild e' un quadrato di 20x20 stanze. I settori sono dinamici,
+nel senso che vengono caricati in memoria quando servono e scaricati quando
+non servono piu'.
+
+Anche se a prima vista questo puo' sembrare inutile visto che basterebbe
+dichiarare un array bidimensionale di tipo char che occuperebbe solo 4 Mb
+di memoria, questo meccanismo consente di associare a ciascun settore wild
+tutta una serie di variabili, quali risorse presenti nel territorio, tabella
+degli incontri dei mob, dati sull'ecosistema e altro ancora che, nel caso di
+una mappa completamente caricata in memoria, ne occuperebbero una quantita'
+spropositata.
+
+Il settore viene identificato, partendo dalle coordinate di una stanza,
+mediante la formula:
+
+int y = coord->y / MAP_SIZE * MAP_SIZE;
+int x = coord->x / MAP_SIZE * MAP_SIZE;
+
+dove, di base, MAP_SIZE e' uguale a 20.
+
+in questo modo, per esempio, tutte le stanze con coord->y compreso tra 60 e
+79 daranno come risultato y = 60, dato che i valori decimali sono troncati in
+quanto le variabili sono tutte intere.
+
+Quando devono essere caricati, il codice, dopo aver calcolato le coordinate
+di settore, legge la mappa ed i dati di quel settore ed inizializza le
+variabili necessarie.
+
+L'unico criterio di caricamento/scaricamento e' la presenza di stanze
+necessarie in quel settore. Se e' necessario caricare una stanza di quel
+settore, il settore stesso viene caricato. Se in memoria non vi sono piu'
+sue stanze, il settore viene scaricato.
+
+Il tempo di elaborazione non e' avvertibile (inferiore al secondo).
+
+
+-------------------
+Mappa del Giocatore
+-------------------
+
+Data la natura dinamica dei settori wild e mancando una mappa "statica" della
+wilderness, per riuscire a visualizzare una mappa ascii a ciascun giocatore
+viene generata dinamicamente una mappa del settore in cui si trova, piu' gli
+otto settori adiacenti. Tali settori NON sono caricati in memoria in questa
+fase, ma solamente quando il giocatore vi si muovera'.
+
+La mappa del giocatore viene salvata nella variabile **wildmap situata nella
+struttura PLAYER_SPECIAL_DATA. Ogni volta che il giocatore si sposta da un
+settore wild all'altro, la mappa viene rigenerata.
+
+Il tempo di elaborazione non e' avvertibile (inferiore al secondo).
+
+Questa pero' _NON_ e' la mappa che viene mostrata al giocatore. Tale mappa
+viene utilizzata dal codice contenuto in wild.map.c per disegnare ed inviare
+al giocatore la mappa REALE, che tiene conto dello stile di visualizzazione
+impostato, oltre a eventuali incantesimi, edifici, locazioni particolari,
+mob e giocatori nelle locazioni vicine, eccetera.
+
+Il giocatore vedra' un quadrato di circa 13x17 di dimensioni, che viene
+pero' "smussato" agli angoli dal raggio visivo. Non vengono fatte differenze
+tra visione frontale e posteriore, assumendo una vista a 360 gradi.
+
+Non e' al momento implementata (ne' e' in previsione un'implementazione) di
+un effetto "linea di vista" che tenga conto di altitudini e/o ostacoli.
+
+E' invece stata implementata una limitazione alla visibilita' in base alle
+condizioni atmosferiche, all'ora del giorno e, di notte, alla fase lunare.
+
+In tal modo la mappa si presentera' sferica (sembra ovale ma e' sferica),
+come nell'esempio qui sotto:
+
+Road
+     .______     
+    .._______    
+   ...________   
+  ......H______  
+  ..,,,,:..____  
+  ..,,,,:,,....  
+ ..,,,,,#,,,,,,, 
+  ,,,,II@II,,,,  
+  ,,,,I   I,,,,  
+  ,,,,I   I,,,,  
+   ,,,IIIII,,,   
+    ,,,,,,,,,    
+     ,,,,,,,     
+
+
+Ciascun giocatore puo' impostare la visualizzazione della mappa in due modi:
+
+- mappa con simboli	(quella dell'esempio)
+- mappa con lettere
+
+Queste modalita' a loro volta possono essere impostate:
+
+- a colori
+- in bianco e nero (viene forzato lo stile "mappa con lettere")
+
+Infine, e' possibile scegliere una modalita' compatta, che mostra una parte
+ridottissima della mappa, circa 5x7, per motivi che possono essere la
+velocita' di spostamento in gruppo, ecc.
+
+
+-----------------------------
+Appendice A - Tipi di Terreno
+-----------------------------
+
+In Lyonesse sono presenti e usati i seguenti tipi di terreno, oltre ad
+altri non elencati che sono riservati per usi particolari:
+
+-------------------------
+Coastline
+Artic
+Sea
+Shallows
+River
+River (Navigable)
+Hill
+Mountain
+Jungle
+Forest
+Forested Hill
+Field
+Plain
+Wasteland
+Desert
+Mountain Peak
+Beach
+Plateau
+Road
+Swamp
+Reef
+Forested Mountain
+Bridge
+Port
+Ford
+Zone Border
+Zone Inside
+Zone Exit
+-------------------------

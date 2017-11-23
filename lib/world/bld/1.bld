@@ -1,0 +1,39 @@
+#0
+The Kitchen~
+   You are in the kitchen.
+~
+ads 0
+D1
+You see the entrance room.
+~
+~
+0 -1 1
+S
+#1
+The Entrance Room~
+   You are in the entrance room.
+~
+ad 0
+D1
+You see the bedroom.
+~
+~
+0 -1 2
+D3
+You see the kitchen.
+~
+~
+0 -1 0
+S
+#2
+The Bedroom~
+   You are in the bedroom.
+~
+ad 0
+D3
+You see the entrance room.
+~
+~
+0 -1 1
+S
+$

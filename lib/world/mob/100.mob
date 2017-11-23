@@ -1,0 +1,52 @@
+#10000
+spirit wandering~
+the wandering spirit~
+Lo spirito di un avventuriero intrappolato nel Labirinto.
+~
+An undefined string.~
+cdefglnop fkp 0 E
+20 0 -10 5d6+150 4d8+5
+500 60000
+8 8 0
+E
+#10001
+troll stone~
+a stone troll~
+An ugly, fiendish stone troll is here, looking for fresh meat.
+~
+The troll is ugly, and his skin is pure stone.
+~
+dflnpr k -1000 E
+15 3 -2 6d8+80 2d6+6
+200 40000
+8 8 1
+E
+#10002
+priest high~
+the high priest~
+The high priest is here, holding the holy staff of resurrection in one hand.
+~
+You are in no doubt that this master is truly close to your God; he
+has a peaceful, loving look.  You notice that he is surrounded by a white
+aura.
+~
+abdelnop dh 1000 E
+34 0 -10 6d10+640 1d8+24
+18794 100000
+8 8 1
+E
+#10003
+priestess high~
+the high priestess~
+The high priestess is here, holding the holy staff of resurrection in one hand.
+~
+You are in no doubt that this mistress is truly close to your God; she
+has a peaceful, loving look.  You notice that she is surrounded by a white
+aura.
+~
+abdelnop dh 1000 E
+34 0 -10 6d10+640 1d8+24
+18794 100000
+8 8 2
+E
+$

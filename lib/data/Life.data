@@ -1,0 +1,45 @@
+*
+* wandering monster encounter chart -- Base Chart
+*
+* fields:
+*
+* <sector num> <mob vnum> <mob name>~ <max number> <min number> (1)<current number> (2)<regen rate>
+*
+* (1) in base charts always set to 0
+*
+* (2) regen_rate is halved by 100 in loading, so if you want to regenerate 1 mob per mud hour
+* you have to write 100, for 3 mob per hours write 300, for 1 mob every 2 hours write 50,
+* and so on..
+*
+*
+M 2 4000 the snake~ 100 40 0 100
+M 2 4001 the green snake~ 150 50 0 300
+M 5 4057 the mountain lion~ 40 15 0 50
+M 30 4057 the mountain lion~ 45 20 0 80
+M 4 4058 the hill giant~ 40 15 0 100
+M 12 4058 the hill giant~ 30 10 0 100
+M 4 4101 the troll~ 20 10 0 50
+M 3 500001 the rabbit~ 500 200 0 400
+M 3 500002 the brown bear~ 50 20 0 100
+M 3 500003 the ferocious rabbit~ 250 100 0 200
+M 3 500004 the fallow deer~ 200 50 0 200
+M 3 500005 the brown fox~ 50 20 0 50
+M 3 500006 the bird~ 400 200 0 200
+M 3 500007 the bobcat~ 40 15 0 30
+M 3 500008 the sparrow~ 500 250 0 400
+M 3 500010 the squirrel~ 400 200 0 200
+M 3 500011 the sleepy badger~ 100 40 0 100
+M 3 500012 the grey squirrel~ 300 150 0 200
+M 3 500013 the small chipmunk~ 250 150 0 200
+M 3 500014 the large black crow~ 100 50 0 100
+M 3 500015 the grotesque vulture~ 50 20 0 20
+M 3 500016 the young buck~ 200 100 0 100
+M 3 500017 the vicious warg~ 80 20 0 50 
+M 3 500018 the ferocious warg~ 70 15 0 40
+M 3 500019 the large, grey wolf~ 150 70 0 100
+M 3 500020 the large, black wolf~ 150 70 0 100
+M 3 500021 the ancient tree~ 100 20 0 10
+M 3 500022 the ancient tree~ 100 20 0 20
+M 3 500023 the green dragon~ 10 5 0 10
+M 3 500024 the huge, poisonous spider~ 40 10 0 50
+$

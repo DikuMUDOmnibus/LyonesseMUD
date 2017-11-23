@@ -1,0 +1,44 @@
+/**************************************************************************
+ * #   #   #   ##   #  #  ###   ##   ##  ###       http://www.lyonesse.it *
+ * #    # #   #  #  ## #  #    #    #    #                                *
+ * #     #    #  #  # ##  ##    #    #   ##   ## ##  #  #  ##             *
+ * #     #    #  #  # ##  #      #    #  #    # # #  #  #  # #            *
+ * ###   #     ##   #  #  ###  ##   ##   ###  #   #  ####  ##    Ver. 1.0 *
+ *                                                                        *
+ * -Based on CircleMud & Smaug-     Copyright (c) 2001-2002 by Mithrandir *
+ * ********************************************************************** */
+
+---------------------------
+TODO list / BUGFIX list
+---------------------------
+
+////////////////////////////////////
+Versione corrente :
+////////////////////////////////////
+
+- creare help per nuovi comandi!!
+- documentare TUTTO il nuovo codice!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+////////////////////////////////////
+Versione 1.1 :
+////////////////////////////////////
+
+- creare comandi/skills per entrare in edifici e/o navi senza permesso (fuorilegge)
+- creare edificio virtuale "cantiere navale" in cui si possono acquistare le navi
+  invece che direttamente nel porto come adesso.
+- creare settori RIVER_BANK e LAKE_BANK e ritoccare tutta la mappa per usarli
+- completare codice degli eventi nelle stanze
+- reinserire codice della produzione oggetti
+- gestire nel codice e nei world files le spec_procs come nomi (v. spec_procs.c)
+
+
+////////////////////////////////////
+Versione 1.2 :
+////////////////////////////////////
+- feudi, regni ed imperi (e tutto il resto della roba collegata: Tasse, Eserciti ecc ecc)
+
+////////////////////////////////////
+Versione 1.3 :
+////////////////////////////////////
+- rivedere completamente sistema di gestione spells e skills

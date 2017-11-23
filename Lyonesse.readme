@@ -1,0 +1,22 @@
+/**************************************************************************
+ * #   #   #   ##   #  #  ###   ##   ##  ###       http://www.lyonesse.it *
+ * #    # #   #  #  ## #  #    #    #    #                                *
+ * #     #    #  #  # ##  ##    #    #   ##   ## ##  #  #  ##             *
+ * #     #    #  #  # ##  #      #    #  #    # # #  #  #  # #            *
+ * ###   #     ##   #  #  ###  ##   ##   ###  #   #  ####  ##    Ver. 1.0 *
+ *                                                                        *
+ * -Based on CircleMud & Smaug-     Copyright (c) 2001-2002 by Mithrandir *
+ * ********************************************************************** */
+
+The very first time LyonesseMUD will be executed, it will take 2 minutes
+circa to come up, because it have to parse the graphical map and write
+10.000 ascii map files.
+
+Following executions, with map files already in place, should take 5 seconds
+circa to load the mud.
+
+These times refer to a Pentium IV with 384Mb of ram, and could be different
+depending on your hardware configuration.
+
+
+Fabrizio Baldi (aka Mithrandir)

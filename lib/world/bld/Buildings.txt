@@ -1,0 +1,56 @@
+#BUILDING
+Vnum         0
+Name         hut~
+Size         1
+Entrance     0
+Cost         1000
+Rng_Health   5 10
+Rng_Defense  8 12
+End
+
+#BUILDING
+Vnum         1
+Name         house~
+Size         3
+Entrance     1
+Cost         50000
+Rng_Health   10 17
+Rng_Defense  15 22
+Rng_Att_MOB  1 2
+Vmob         3068
+End
+
+#BUILDING
+Vnum         2
+Name         stable~
+Size         1
+Entrance     0
+Cost         20000
+Rng_Health   10 15
+Rng_Defense  12 18
+Cmd          M 29 1 0 0
+End
+
+#BUILDING
+Vnum         3
+Name         trading post~
+Size         1
+Entrance     0
+Cost         80000
+Rng_Health   10 15
+Rng_Defense  12 18
+End
+
+#BUILDING
+Vnum         4
+Name         workshop~
+Size         3
+Entrance     1
+Cost         105000
+Rng_Health   12 17
+Rng_Defense  18 22
+Vmob         3068
+Cmd          O 16 1 0 0
+End
+
+#END

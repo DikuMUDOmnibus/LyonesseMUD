@@ -1,0 +1,1695 @@
+#GOODS
+vnum             1
+Name             barley~
+unit             dustone
+Code             0
+weight           2
+cost             100
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             2
+Name             buckwheat~
+unit             dustone
+Code             0
+weight           2
+cost             50
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             3
+Name             chick peas~
+unit             dustone
+Code             0
+weight           2
+cost             300
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             4
+Name             lentils~
+unit             dustone
+Code             0
+weight           2
+cost             200
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             5
+Name             millet~
+unit             dustone
+Code             0
+weight           2
+cost             30
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             6
+Name             oats~
+unit             dustone
+Code             0
+weight           2
+cost             70
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             7
+Name             rice~
+unit             dustone
+Code             0
+weight           2
+cost             500
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             8
+Name             rye~
+unit             dustone
+Code             0
+weight           2
+cost             70
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             9
+Name             wheat berries~
+unit             dustone
+Code             0
+weight           2
+cost             200
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             10
+Name             floured barley~
+unit             sack
+Code             1
+weight           5
+cost             200
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             11
+Name             buckwheat flour~
+unit             sack
+Code             1
+weight           5
+cost             100
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             12
+Name             floured rye~
+unit             sack
+Code             1
+weight           5
+cost             150
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             13
+Name             wheat flour~
+unit             sack
+Code             1
+weight           5
+cost             300
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             14
+Name             canvas~
+unit             bolt
+Code             2
+weight           4
+cost             30
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             15
+Name             cotton~
+unit             bolt
+Code             2
+weight           4
+cost             80
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             16
+Name             wool flannel~
+unit             bolt
+Code             2
+weight           4
+cost             24
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             17
+Name             homespun~
+unit             bolt
+Code             2
+weight           4
+cost             15
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             18
+Name             lace~
+unit             tenspan
+Code             2
+weight           1
+cost             500
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             19
+Name             linen~
+unit             bolt
+Code             2
+weight           4
+cost             80
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             20
+Name             raw wool~
+unit             stone
+Code             2
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             21
+Name             sailcloth~
+unit             tenspan
+Code             2
+weight           1
+cost             10
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             22
+Name             silk~
+unit             tenspan
+Code             2
+weight           1
+cost             700
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             23
+Name             mattress ticking~
+unit             tenspan
+Code             2
+weight           1
+cost             100
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             24
+Name             pillow ticking~
+unit             tenspan
+Code             2
+weight           1
+cost             80
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             25
+Name             velvet~
+unit             tenspan
+Code             2
+weight           1
+cost             300
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             26
+Name             wool~
+unit             bolt
+Code             2
+weight           4
+cost             100
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             27
+Name             bear~
+unit             fur
+Code             3
+weight           12
+cost             500
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             28
+Name             deer~
+unit             hide
+Code             3
+weight           10
+cost             400
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             29
+Name             red fox~
+unit             hide
+Code             3
+weight           2
+cost             1400
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             30
+Name             white fox~
+unit             hide
+Code             3
+weight           2
+cost             1700
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             31
+Name             horse~
+unit             hide
+Code             3
+weight           13
+cost             300
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             32
+Name             jaguar~
+unit             hide
+Code             3
+weight           6
+cost             2500
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             33
+Name             leather~
+unit             hide
+Code             3
+weight           6
+cost             200
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             34
+Name             leopard~
+unit             hide
+Code             3
+weight           6
+cost             2200
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             35
+Name             lion~
+unit             hide
+Code             3
+weight           7
+cost             2400
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             36
+Name             mink~
+unit             fur
+Code             3
+weight           3
+cost             1200
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             37
+Name             panther~
+unit             hide
+Code             3
+weight           6
+cost             1500
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             38
+Name             raccoon~
+unit             fur
+Code             3
+weight           2
+cost             200
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             39
+Name             shark~
+unit             skin
+Code             3
+weight           7
+cost             1500
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             40
+Name             sheep~
+unit             hide
+Code             3
+weight           4
+cost             600
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             41
+Name             tiger~
+unit             hide
+Code             3
+weight           7
+cost             2500
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             42
+Name             wolf~
+unit             hide
+Code             3
+weight           4
+cost             800
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             43
+Name             copper blue~
+unit             vial
+Code             4
+weight           1
+cost             330
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             44
+Name             ultramarine blue~
+unit             vial
+Code             4
+weight           1
+cost             100
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             45
+Name             mollusk green~
+unit             vial
+Code             4
+weight           1
+cost             90
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             46
+Name             indigo~
+unit             vial
+Code             4
+weight           1
+cost             300
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             47
+Name             ocher~
+unit             vial
+Code             4
+weight           1
+cost             120
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             48
+Name             purple~
+unit             vial
+Code             4
+weight           1
+cost             330
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             49
+Name             cochineal red~
+unit             vial
+Code             4
+weight           1
+cost             40
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             50
+Name             iron red~
+unit             vial
+Code             4
+weight           1
+cost             50
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             51
+Name             mollusk red~
+unit             vial
+Code             4
+weight           1
+cost             50
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             52
+Name             safflower dye~
+unit             vial
+Code             4
+weight           1
+cost             40
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             53
+Name             sulfer yellow~
+unit             vial
+Code             4
+weight           1
+cost             30
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             54
+Name             vermilion dye~
+unit             vial
+Code             4
+weight           1
+cost             44
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             55
+Name             refined brass~
+unit             bar
+Code             5
+weight           20
+cost             10
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             56
+Name             refined bronze~
+unit             bar
+Code             5
+weight           20
+cost             7
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             57
+Name             refined copper~
+unit             bar
+Code             5
+weight           20
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             58
+Name             refined gold~
+unit             bar
+Code             5
+weight           30
+cost             1100
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             59
+Name             refined iron~
+unit             bar
+Code             5
+weight           50
+cost             5
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             60
+Name             refined lead~
+unit             bar
+Code             5
+weight           70
+cost             7
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             61
+Name             refined platinum~
+unit             halfbar
+Code             5
+weight           20
+cost             2000
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             62
+Name             refined silver~
+unit             bar
+Code             5
+weight           20
+cost             300
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             63
+Name             refined tin~
+unit             bar
+Code             5
+weight           15
+cost             20
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             64
+Name             brass ore~
+unit             nugget
+Code             6
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             65
+Name             bronze ore~
+unit             nugget
+Code             6
+weight           1
+cost             3
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             66
+Name             copper ore~
+unit             nugget
+Code             6
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             67
+Name             gold ore~
+unit             nugget
+Code             6
+weight           1
+cost             350
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             68
+Name             iron ore~
+unit             nugget
+Code             6
+weight           1
+cost             1
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             69
+Name             lead ore~
+unit             nugget
+Code             6
+weight           1
+cost             3
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             70
+Name             platinum ore~
+unit             nugget
+Code             6
+weight           1
+cost             700
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             71
+Name             silver ore~
+unit             nugget
+Code             6
+weight           1
+cost             100
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             72
+Name             tin ore~
+unit             nugget
+Code             6
+weight           1
+cost             7
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             73
+Name             angelica~
+unit             jar
+Code             7
+weight           1
+cost             3
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             74
+Name             anise~
+unit             jar
+Code             7
+weight           1
+cost             8
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             75
+Name             basil~
+unit             jar
+Code             7
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             76
+Name             bergamot~
+unit             jar
+Code             7
+weight           1
+cost             5
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             77
+Name             borage~
+unit             jar
+Code             7
+weight           1
+cost             5
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             78
+Name             calendula~
+unit             jar
+Code             7
+weight           1
+cost             4
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             79
+Name             caraway~
+unit             jar
+Code             7
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             80
+Name             chervil~
+unit             jar
+Code             7
+weight           1
+cost             4
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             81
+Name             chives~
+unit             jar
+Code             7
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             82
+Name             clary~
+unit             jar
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             83
+Name             coriander~
+unit             jar
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             84
+Name             costmary~
+unit             jar
+Code             7
+weight           1
+cost             5
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             85
+Name             cumin~
+unit             jar
+Code             7
+weight           1
+cost             7
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             86
+Name             dillweed~
+unit             jar
+Code             7
+weight           1
+cost             3
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             87
+Name             sweet herbs~
+unit             fagot
+Code             7
+weight           1
+cost             10
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             88
+Name             fennel seed~
+unit             jar
+Code             7
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             89
+Name             fenugreek~
+unit             jar
+Code             7
+weight           1
+cost             3
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             90
+Name             garlic~
+unit             jar
+Code             7
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             91
+Name             horehound~
+unit             jar
+Code             7
+weight           1
+cost             5
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             92
+Name             horseradish~
+unit             jar
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             93
+Name             hyssop~
+unit             jar
+Code             7
+weight           1
+cost             9
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             94
+Name             juniper~
+unit             jar
+Code             7
+weight           1
+cost             9
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             95
+Name             laurel~
+unit             jar
+Code             7
+weight           1
+cost             8
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             96
+Name             lemon balm~
+unit             jar
+Code             7
+weight           1
+cost             4
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             97
+Name             liquorice root~
+unit             jar
+Code             7
+weight           1
+cost             3
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             98
+Name             lovage~
+unit             jar
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             99
+Name             marigold~
+unit             jar
+Code             7
+weight           1
+cost             12
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             100
+Name             marjoram~
+unit             jar
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             101
+Name             mint~
+unit             jar
+Code             7
+weight           1
+cost             7
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             102
+Name             mustard seed~
+unit             jar
+Code             7
+weight           1
+cost             3
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             103
+Name             oregano~
+unit             jar
+Code             7
+weight           1
+cost             4
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             104
+Name             parsley~
+unit             jar
+Code             7
+weight           1
+cost             4
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             105
+Name             poppy seed~
+unit             jar
+Code             7
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             106
+Name             rose hips~
+unit             jar
+Code             7
+weight           1
+cost             15
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             107
+Name             rosemary~
+unit             jar
+Code             7
+weight           1
+cost             5
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             108
+Name             sage~
+unit             jar
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             109
+Name             salt~
+unit             jar
+Code             7
+weight           1
+cost             1
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             110
+Name             winter savory~
+unit             jar
+Code             7
+weight           1
+cost             7
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             111
+Name             summer savory~
+unit             jar
+Code             7
+weight           1
+cost             7
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             112
+Name             sweet cicely~
+unit             jar
+Code             7
+weight           1
+cost             8
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             113
+Name             tarragon~
+unit             jar
+Code             7
+weight           1
+cost             7
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             114
+Name             thyme~
+unit             jar
+Code             7
+weight           1
+cost             8
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             115
+Name             woodruff~
+unit             jar
+Code             7
+weight           1
+cost             10
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             116
+Name             canella~
+unit             sachet
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             117
+Name             cardamon~
+unit             sachet
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             118
+Name             cinnamon~
+unit             fagot
+Code             7
+weight           1
+cost             5
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             119
+Name             cloves~
+unit             sachet
+Code             7
+weight           1
+cost             7
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             120
+Name             cubeb~
+unit             sachet
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             121
+Name             galingale~
+unit             sachet
+Code             7
+weight           1
+cost             8
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             122
+Name             ginger~
+unit             sachet
+Code             7
+weight           1
+cost             3
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             123
+Name             mace~
+unit             sachet
+Code             7
+weight           1
+cost             2
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             124
+Name             nutmeg~
+unit             sachet
+Code             7
+weight           1
+cost             5
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             125
+Name             black pepper~
+unit             sachet
+Code             7
+weight           1
+cost             70
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             126
+Name             red pepper~
+unit             sachet
+Code             7
+weight           1
+cost             80
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             127
+Name             white pepper~
+unit             sachet
+Code             7
+weight           1
+cost             90
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             128
+Name             saffron~
+unit             sachet
+Code             7
+weight           1
+cost             4
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             129
+Name             turmeric~
+unit             sachet
+Code             7
+weight           1
+cost             6
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             130
+Name             rose petal honey~
+unit             jar
+Code             8
+weight           1
+cost             20
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             131
+Name             parsley honey~
+unit             jar
+Code             8
+weight           1
+cost             12
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             132
+Name             lavander honey~
+unit             jar
+Code             8
+weight           1
+cost             15
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             133
+Name             marzipan~
+unit             jar
+Code             8
+weight           1
+cost             30
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             134
+Name             molasses~
+unit             jar
+Code             8
+weight           1
+cost             20
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             135
+Name             sorghum~
+unit             jar
+Code             8
+weight           1
+cost             10
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             136
+Name             brown sugar~
+unit             sack
+Code             8
+weight           3
+cost             10
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             137
+Name             lavender sugar~
+unit             sack
+Code             8
+weight           2
+cost             15
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             138
+Name             loaf sugar~
+unit             sack
+Code             8
+weight           3
+cost             12
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             139
+Name             lemon sugar~
+unit             sack
+Code             8
+weight           2
+cost             15
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             140
+Name             mace sugar~
+unit             sack
+Code             8
+weight           2
+cost             14
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             141
+Name             orange sugar~
+unit             sack
+Code             8
+weight           2
+cost             18
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             142
+Name             powdered sugar~
+unit             sack
+Code             8
+weight           1
+cost             20
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             143
+Name             raw sugar~
+unit             sack
+Code             8
+weight           5
+cost             8
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             144
+Name             rose sugar~
+unit             sack
+Code             8
+weight           2
+cost             25
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             145
+Name             violet sugar~
+unit             sack
+Code             8
+weight           3
+cost             22
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             146
+Name             almond oil~
+unit             flask
+Code             9
+weight           1
+cost             30
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             147
+Name             hazelnut oil~
+unit             flask
+Code             9
+weight           1
+cost             30
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             148
+Name             herbal oil~
+unit             flask
+Code             9
+weight           1
+cost             50
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             149
+Name             olive oil~
+unit             flask
+Code             9
+weight           1
+cost             10
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             150
+Name             rapeseed oil~
+unit             flask
+Code             9
+weight           1
+cost             20
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             151
+Name             safflower oil~
+unit             flask
+Code             9
+weight           1
+cost             30
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             152
+Name             sesame oil~
+unit             flask
+Code             9
+weight           1
+cost             50
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             153
+Name             sunflower oil~
+unit             flask
+Code             9
+weight           1
+cost             40
+Life             -1
+Market           0
+End
+
+#GOODS
+vnum             154
+Name             walnut oil~
+unit             flask
+Code             9
+weight           1
+cost             50
+Life             -1
+Market           0
+End
+
+#END

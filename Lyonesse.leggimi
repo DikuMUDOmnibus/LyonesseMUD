@@ -1,0 +1,22 @@
+/**************************************************************************
+ * #   #   #   ##   #  #  ###   ##   ##  ###       http://www.lyonesse.it *
+ * #    # #   #  #  ## #  #    #    #    #                                *
+ * #     #    #  #  # ##  ##    #    #   ##   ## ##  #  #  ##             *
+ * #     #    #  #  # ##  #      #    #  #    # # #  #  #  # #            *
+ * ###   #     ##   #  #  ###  ##   ##   ###  #   #  ####  ##    Ver. 1.0 *
+ *                                                                        *
+ * -Based on CircleMud & Smaug-     Copyright (c) 2001-2002 by Mithrandir *
+ * ********************************************************************** */
+
+La prima volta che LyonesseMUD viene eseguito occorreranno circa 2 minuti
+perche' completi il boot, dato che deve interpretare la mappa grafica e
+creare i 10.000 files della mappa ascii.
+
+Le volte successive, con i files al loro posto, il mud dovrebbe impiegare
+circa 5 secondi per caricarsi.
+
+Questi tempi si riferiscono ad un Pentium IV con 384Mb di ram, e possono
+variare a seconda dell'hardware a vostra disposizione.
+
+
+Fabrizio Baldi (aka Mithrandir)

@@ -1,0 +1,85 @@
+#MARKET
+Vnum             1
+Name             Midgaard
+Heart            950 1174
+Size             30
+Var_real_price   100
+Var_real_prod    100
+Var_real_clos    100
+End
+
+#MARKET
+Vnum             2
+Name             Thalos
+Heart            100 1100
+Size             20
+Var_real_price   100
+Var_real_prod    100
+Var_real_clos    100
+End
+
+#MARKET
+Vnum             3
+Name             Ys
+Heart            100 1600
+Size             20
+Var_real_price   100
+Var_real_prod    100
+Var_real_clos    100
+End
+
+#MARKET
+Vnum             4
+Name             Noname
+Size             0
+End
+
+#MARKET
+Vnum             5
+Name             Noname
+Size             0
+End
+
+#MARKET
+Vnum             6
+Name             Noname
+Size             0
+End
+
+#MARKET
+Vnum             7
+Name             Noname
+Size             0
+End
+
+#MARKET
+Vnum             8
+Name             Noname
+Size             0
+End
+
+#MARKET
+Vnum             9
+Name             Noname
+Size             0
+End
+
+#MARKET
+Vnum             10
+Name             Noname
+Size             0
+End
+
+#MARKET
+Vnum             11
+Name             Noname
+Size             0
+End
+
+#MARKET
+Vnum             12
+Name             Noname
+Size             0
+End
+
+#END

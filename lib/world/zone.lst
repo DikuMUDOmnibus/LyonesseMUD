@@ -1,0 +1,25 @@
+Zone Vnum List
+**************
+
+0       - Limbo - Internal
+12      - God Simplex
+15      - The Straight Path
+25      - High Tower Of Sorcery
+30      - Midgaard City
+33      - Three Of Swords
+40      - Moria
+51      - Drow City
+52      - Old Thalos
+53      - Great Pyramid
+54      - New Thalos
+62      - Orc Enclave
+63      - Arachnos
+65      - Dwarven Kingdom
+100     - Labyrinth of the Deads
+120     - Rome
+186     - Newbie Zone
+### RESERVED ###
+5000    - Wild      - Internal
+5001    - Buildings - Internal
+5002    - Ships     - Internal
+5003    - Ferries   - Internal

@@ -1,0 +1,89 @@
+#TYPE
+Vnum             0
+Name             corn
+Prod             150 200 250 200
+Elast            1
+Cons_speed       70
+End
+
+#TYPE
+Vnum             1
+Name             flour
+Prod             50 100 250 200
+Elast            2
+Cons_speed       70
+End
+
+#TYPE
+Vnum             2
+Name             fabric
+Prod             20 25 35 25
+Elast            2
+Cons_speed       40
+End
+
+#TYPE
+Vnum             3
+Name             hide
+Prod             50 50 50 50
+Elast            1
+Cons_speed       50
+End
+
+#TYPE
+Vnum             4
+Name             dye
+Prod             25 25 25 25
+Elast            3
+Cons_speed       30
+End
+
+#TYPE
+Vnum             5
+Name             metal
+Prod             50 50 50 50
+Elast            2
+Cons_speed       60
+End
+
+#TYPE
+Vnum             6
+Name             ore
+Prod             80 80 80 80
+Elast            1
+Cons_speed       80
+End
+
+#TYPE
+Vnum             7
+Name             spice
+Prod             10 10 7 7
+Elast            3
+Cons_speed       30
+End
+
+#TYPE
+Vnum             8
+Name             sugar
+Prod             15 30 30 30
+Elast            2
+Cons_speed       50
+End
+
+#TYPE
+Vnum             9
+Name             oil
+Prod             30 30 30 30
+Elast            2
+Cons_speed       50
+End
+
+#TYPE
+Vnum             10
+Name             wood
+Prod             200 100 100 200
+Elast            1
+Cons_speed       70
+End
+
+#END

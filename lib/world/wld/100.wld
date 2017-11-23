@@ -1,0 +1,2654 @@
+#10000
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D1
+It's too smoky to see.
+~
+~
+0 -1 10001
+D2
+It's too smoky to see.
+~
+~
+0 -1 10010
+S
+#10001
+Black Stone Archway~
+This is an ancient stone archway. Various faces of demons and other grim
+pictures are painted onto it. Stone gargoyles and demons glare down at
+you from atop the arch.
+There is a bronze plaque above the archway.
+~
+100 d 0
+D1
+It's too smoky to see.
+~
+~
+0 -1 10002
+D2
+It's too smoky to see.
+~
+~
+0 -1 10011
+D3
+It's too smoky to see.
+~
+~
+0 -1 10000
+E
+plaque~
+*********************
+Labyrinth of the Dead
+*********************
+Every mortal soul that gets killed in the world of flesh come here.
+In the labyrinth there are two high priests, guardians of souls, one male
+and one female. The first one, the male guardian of the entrance, can
+resurrect you as soon as you arrive, but everything you possess, you'll
+lose. The second one, the female guardian of the exit, will send you back
+to the world of flash with all your belongings with you, but first you
+must find her.
+  The choice is yours.
+~
+S
+#10002
+Mural of the Dead~
+You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole north wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D1
+It's too smoky to see.
+~
+~
+0 -1 10003
+D2
+It's too smoky to see.
+~
+~
+0 -1 10012
+D3
+It's too smoky to see.
+~
+~
+0 -1 10001
+S
+#10003
+Mural of the Dead~
+   You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole north wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D1
+It's too smoky to see.
+~
+~
+0 -1 10004
+D2
+It's too smoky to see.
+~
+~
+0 -1 10013
+D3
+It's too smoky to see.
+~
+~
+0 -1 10002
+S
+#10004
+Mural of the Dead~
+   You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole north wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D1
+It's too smoky to see.
+~
+~
+0 -1 10005
+D2
+It's too smoky to see.
+~
+~
+0 -1 10014
+D3
+It's too smoky to see.
+~
+~
+0 -1 10003
+S
+#10005
+Mural of the Dead~
+   You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole north wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D1
+It's too smoky to see.
+~
+~
+0 -1 10006
+D2
+It's too smoky to see.
+~
+~
+0 -1 10015
+D3
+It's too smoky to see.
+~
+~
+0 -1 10004
+S
+#10006
+Mural of the Dead~
+   You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole north wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D1
+It's too smoky to see.
+~
+~
+0 -1 10007
+D2
+It's too smoky to see.
+~
+~
+0 -1 10016
+D3
+It's too smoky to see.
+~
+~
+0 -1 10005
+S
+#10007
+Mural of the Dead~
+   You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole north wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D1
+It's too smoky to see.
+~
+~
+0 -1 10008
+D2
+It's too smoky to see.
+~
+~
+0 -1 10017
+D3
+It's too smoky to see.
+~
+~
+0 -1 10006
+S
+#10008
+Mural of the Dead~
+   You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole north wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D1
+It's too smoky to see.
+~
+~
+0 -1 10009
+D2
+It's too smoky to see.
+~
+~
+0 -1 10018
+D3
+It's too smoky to see.
+~
+~
+0 -1 10007
+S
+#10009
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D2
+It's too smoky to see.
+~
+~
+0 -1 10019
+D3
+It's too smoky to see.
+~
+~
+0 -1 10008
+S
+#10010
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10000
+D1
+It's too smoky to see.
+~
+~
+0 -1 10011
+D2
+It's too smoky to see.
+~
+~
+0 -1 10020
+S
+#10011
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10001
+D1
+It's too smoky to see.
+~
+~
+0 -1 10012
+D2
+It's too smoky to see.
+~
+~
+0 -1 10021
+D3
+It's too smoky to see.
+~
+~
+0 -1 10010
+S
+#10012
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10002
+D1
+It's too smoky to see.
+~
+~
+0 -1 10013
+D2
+It's too smoky to see.
+~
+~
+0 -1 10022
+D3
+It's too smoky to see.
+~
+~
+0 -1 10011
+S
+#10013
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10003
+D1
+It's too smoky to see.
+~
+~
+0 -1 10014
+D2
+It's too smoky to see.
+~
+~
+0 -1 10023
+D3
+It's too smoky to see.
+~
+~
+0 -1 10012
+S
+#10014
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10004
+D1
+It's too smoky to see.
+~
+~
+0 -1 10015
+D2
+It's too smoky to see.
+~
+~
+0 -1 10024
+D3
+It's too smoky to see.
+~
+~
+0 -1 10013
+S
+#10015
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10005
+D1
+It's too smoky to see.
+~
+~
+0 -1 10016
+D2
+It's too smoky to see.
+~
+~
+0 -1 10025
+D3
+It's too smoky to see.
+~
+~
+0 -1 10014
+S
+#10016
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10006
+D1
+It's too smoky to see.
+~
+~
+0 -1 10017
+D2
+It's too smoky to see.
+~
+~
+0 -1 10026
+D3
+It's too smoky to see.
+~
+~
+0 -1 10015
+S
+#10017
+Hall of Fire~
+You are standing in a hallway made of fire. The walls are ablaze with
+yellow and blue flames. The smell of the hot air and sulfur burn your
+lungs as you inhale, and dry your mouth as you exhale. The stone floor
+burns at your feet and hungrily drinks up every drop of sweat as they
+fall from your body.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10007
+D1
+It's too smoky to see.
+~
+~
+0 -1 10018
+D2
+It's too smoky to see.
+~
+~
+0 -1 10027
+D3
+It's too smoky to see.
+~
+~
+0 -1 10016
+S
+#10018
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10008
+D1
+It's too smoky to see.
+~
+~
+0 -1 10019
+D2
+It's too smoky to see.
+~
+~
+0 -1 10028
+D3
+It's too smoky to see.
+~
+~
+0 -1 10017
+S
+#10019
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10009
+D2
+It's too smoky to see.
+~
+~
+0 -1 10029
+D3
+It's too smoky to see.
+~
+~
+0 -1 10018
+S
+#10020
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10010
+D1
+It's too smoky to see.
+~
+~
+0 -1 10021
+D2
+It's too smoky to see.
+~
+~
+0 -1 10030
+S
+#10021
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10011
+D1
+It's too smoky to see.
+~
+~
+0 -1 10022
+D2
+It's too smoky to see.
+~
+~
+0 -1 10031
+D3
+It's too smoky to see.
+~
+~
+0 -1 10020
+S
+#10022
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10012
+D1
+It's too smoky to see.
+~
+~
+0 -1 10023
+D2
+It's too smoky to see.
+~
+~
+0 -1 10032
+D3
+It's too smoky to see.
+~
+~
+0 -1 10021
+S
+#10023
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10013
+D1
+It's too smoky to see.
+~
+~
+0 -1 10024
+D2
+It's too smoky to see.
+~
+~
+0 -1 10033
+D3
+It's too smoky to see.
+~
+~
+0 -1 10022
+S
+#10024
+Hall of Fire~
+You are standing in a hallway made of fire. The walls are ablaze with
+yellow and blue flames. The smell of the hot air and sulfur burn your
+lungs as you inhale, and dry your mouth as you exhale. The stone floor
+burns at your feet and hungrily drinks up every drop of sweat as they
+fall from your body.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10014
+D1
+It's too smoky to see.
+~
+~
+0 -1 10025
+D2
+It's too smoky to see.
+~
+~
+0 -1 10034
+D3
+It's too smoky to see.
+~
+~
+0 -1 10023
+S
+#10025
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10015
+D1
+It's too smoky to see.
+~
+~
+0 -1 10026
+D2
+It's too smoky to see.
+~
+~
+0 -1 10035
+D3
+It's too smoky to see.
+~
+~
+0 -1 10024
+S
+#10026
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10016
+D1
+It's too smoky to see.
+~
+~
+0 -1 10027
+D2
+It's too smoky to see.
+~
+~
+0 -1 10036
+D3
+It's too smoky to see.
+~
+~
+0 -1 10025
+S
+#10027
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10017
+D1
+It's too smoky to see.
+~
+~
+0 -1 10028
+D2
+It's too smoky to see.
+~
+~
+0 -1 10037
+D3
+It's too smoky to see.
+~
+~
+0 -1 10026
+S
+#10028
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10018
+D1
+It's too smoky to see.
+~
+~
+0 -1 10029
+D2
+It's too smoky to see.
+~
+~
+0 -1 10038
+D3
+It's too smoky to see.
+~
+~
+0 -1 10027
+S
+#10029
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10019
+D2
+It's too smoky to see.
+~
+~
+0 -1 10039
+D3
+It's too smoky to see.
+~
+~
+0 -1 10028
+S
+#10030
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10020
+D1
+It's too smoky to see.
+~
+~
+0 -1 10031
+D2
+It's too smoky to see.
+~
+~
+0 -1 10040
+S
+#10031
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10021
+D1
+It's too smoky to see.
+~
+~
+0 -1 10032
+D2
+It's too smoky to see.
+~
+~
+0 -1 10041
+D3
+It's too smoky to see.
+~
+~
+0 -1 10030
+S
+#10032
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10022
+D1
+It's too smoky to see.
+~
+~
+0 -1 10033
+D2
+It's too smoky to see.
+~
+~
+0 -1 10042
+D3
+It's too smoky to see.
+~
+~
+0 -1 10031
+S
+#10033
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10023
+D1
+It's too smoky to see.
+~
+~
+0 -1 10034
+D2
+It's too smoky to see.
+~
+~
+0 -1 10043
+D3
+It's too smoky to see.
+~
+~
+0 -1 10032
+S
+#10034
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10024
+D1
+It's too smoky to see.
+~
+~
+0 -1 10035
+D2
+It's too smoky to see.
+~
+~
+0 -1 10044
+D3
+It's too smoky to see.
+~
+~
+0 -1 10033
+S
+#10035
+Fountain of Blood.~
+This room is made of a rough black stone. The walls seem to ooze black
+sludge. In the middle of the room stands a stone fountain of a demon spitting
+blood.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10025
+D1
+It's too smoky to see.
+~
+~
+0 -1 10036
+D2
+It's too smoky to see.
+~
+~
+0 -1 10045
+D3
+It's too smoky to see.
+~
+~
+0 -1 10034
+E
+fountain~
+Fresh blood spill from the demon's mouth.
+~
+S
+#10036
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10026
+D1
+It's too smoky to see.
+~
+~
+0 -1 10037
+D2
+It's too smoky to see.
+~
+~
+0 -1 10046
+D3
+It's too smoky to see.
+~
+~
+0 -1 10035
+S
+#10037
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10027
+D1
+It's too smoky to see.
+~
+~
+0 -1 10038
+D2
+It's too smoky to see.
+~
+~
+0 -1 10047
+D3
+It's too smoky to see.
+~
+~
+0 -1 10036
+S
+#10038
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10028
+D1
+It's too smoky to see.
+~
+~
+0 -1 10039
+D2
+It's too smoky to see.
+~
+~
+0 -1 10048
+D3
+It's too smoky to see.
+~
+~
+0 -1 10037
+S
+#10039
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10029
+D2
+It's too smoky to see.
+~
+~
+0 -1 10049
+D3
+It's too smoky to see.
+~
+~
+0 -1 10038
+S
+#10040
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10030
+D1
+It's too smoky to see.
+~
+~
+0 -1 10041
+D2
+It's too smoky to see.
+~
+~
+0 -1 10050
+S
+#10041
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10031
+D1
+It's too smoky to see.
+~
+~
+0 -1 10042
+D2
+It's too smoky to see.
+~
+~
+0 -1 10051
+D3
+It's too smoky to see.
+~
+~
+0 -1 10040
+S
+#10042
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10032
+D1
+It's too smoky to see.
+~
+~
+0 -1 10043
+D2
+It's too smoky to see.
+~
+~
+0 -1 10052
+D3
+It's too smoky to see.
+~
+~
+0 -1 10041
+S
+#10043
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10033
+D1
+It's too smoky to see.
+~
+~
+0 -1 10044
+D2
+It's too smoky to see.
+~
+~
+0 -1 10053
+D3
+It's too smoky to see.
+~
+~
+0 -1 10042
+S
+#10044
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10034
+D1
+It's too smoky to see.
+~
+~
+0 -1 10045
+D2
+It's too smoky to see.
+~
+~
+0 -1 10054
+D3
+It's too smoky to see.
+~
+~
+0 -1 10043
+S
+#10045
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10035
+D1
+It's too smoky to see.
+~
+~
+0 -1 10046
+D2
+It's too smoky to see.
+~
+~
+0 -1 10055
+D3
+It's too smoky to see.
+~
+~
+0 -1 10044
+S
+#10046
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10036
+D1
+It's too smoky to see.
+~
+~
+0 -1 10047
+D2
+It's too smoky to see.
+~
+~
+0 -1 10056
+D3
+It's too smoky to see.
+~
+~
+0 -1 10045
+S
+#10047
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10037
+D1
+It's too smoky to see.
+~
+~
+0 -1 10048
+D2
+It's too smoky to see.
+~
+~
+0 -1 10057
+D3
+It's too smoky to see.
+~
+~
+0 -1 10046
+S
+#10048
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10038
+D1
+It's too smoky to see.
+~
+~
+0 -1 10049
+D2
+It's too smoky to see.
+~
+~
+0 -1 10058
+D3
+It's too smoky to see.
+~
+~
+0 -1 10047
+S
+#10049
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10039
+D2
+It's too smoky to see.
+~
+~
+0 -1 10059
+D3
+It's too smoky to see.
+~
+~
+0 -1 10048
+S
+#10050
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10040
+D1
+It's too smoky to see.
+~
+~
+0 -1 10051
+D2
+It's too smoky to see.
+~
+~
+0 -1 10060
+S
+#10051
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10041
+D1
+It's too smoky to see.
+~
+~
+0 -1 10052
+D2
+It's too smoky to see.
+~
+~
+0 -1 10061
+D3
+It's too smoky to see.
+~
+~
+0 -1 10050
+S
+#10052
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10042
+D1
+It's too smoky to see.
+~
+~
+0 -1 10053
+D2
+It's too smoky to see.
+~
+~
+0 -1 10062
+D3
+It's too smoky to see.
+~
+~
+0 -1 10051
+S
+#10053
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10043
+D1
+It's too smoky to see.
+~
+~
+0 -1 10054
+D2
+It's too smoky to see.
+~
+~
+0 -1 10063
+D3
+It's too smoky to see.
+~
+~
+0 -1 10052
+S
+#10054
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10044
+D1
+It's too smoky to see.
+~
+~
+0 -1 10055
+D2
+It's too smoky to see.
+~
+~
+0 -1 10064
+D3
+It's too smoky to see.
+~
+~
+0 -1 10053
+S
+#10055
+Lake of Fire~
+You stand one the shore of a large lake of fire. The smoke and heat fill this
+enormous room. You can barely make out shapes of something moving
+withing the dancing flames of blue and gold..
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10045
+D1
+It's too smoky to see.
+~
+~
+0 -1 10056
+D2
+It's too smoky to see.
+~
+~
+0 -1 10065
+D3
+It's too smoky to see.
+~
+~
+0 -1 10054
+S
+#10056
+Pit of Fire~
+You enter a plain stone room with a large fire pit in the center of it.
+As you look closer at the pit you realize that hundreds of people are being
+burned inside it. They Scream out to you. The noise is deafening. Several
+minor imps and workers push more people into the pit, whistling while
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10046
+D1
+It's too smoky to see.
+~
+~
+0 -1 10057
+D2
+It's too smoky to see.
+~
+~
+0 -1 10066
+D3
+It's too smoky to see.
+~
+~
+0 -1 10055
+S
+#10057
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10047
+D1
+It's too smoky to see.
+~
+~
+0 -1 10058
+D2
+It's too smoky to see.
+~
+~
+0 -1 10067
+D3
+It's too smoky to see.
+~
+~
+0 -1 10056
+S
+#10058
+Hall of Fire~
+You are standing in a hallway made of fire. The walls are ablaze with
+yellow and blue flames. The smell of the hot air and sulfur burn your
+lungs as you inhale, and dry your mouth as you exhale. The stone floor
+burns at your feet and hungrily drinks up every drop of sweat as they
+fall from your body.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10048
+D1
+It's too smoky to see.
+~
+~
+0 -1 10059
+D2
+It's too smoky to see.
+~
+~
+0 -1 10068
+D3
+It's too smoky to see.
+~
+~
+0 -1 10057
+S
+#10059
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10049
+D2
+It's too smoky to see.
+~
+~
+0 -1 10069
+D3
+It's too smoky to see.
+~
+~
+0 -1 10058
+S
+#10060
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10050
+D1
+It's too smoky to see.
+~
+~
+0 -1 10061
+D2
+It's too smoky to see.
+~
+~
+0 -1 10070
+S
+#10061
+Hall of Fire~
+You are standing in a hallway made of fire. The walls are ablaze with
+yellow and blue flames. The smell of the hot air and sulfur burn your
+lungs as you inhale, and dry your mouth as you exhale. The stone floor
+burns at your feet and hungrily drinks up every drop of sweat as they
+fall from your body.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10051
+D1
+It's too smoky to see.
+~
+~
+0 -1 10062
+D2
+It's too smoky to see.
+~
+~
+0 -1 10071
+D3
+It's too smoky to see.
+~
+~
+0 -1 10060
+S
+#10062
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10052
+D1
+It's too smoky to see.
+~
+~
+0 -1 10063
+D2
+It's too smoky to see.
+~
+~
+0 -1 10072
+D3
+It's too smoky to see.
+~
+~
+0 -1 10061
+S
+#10063
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10053
+D1
+It's too smoky to see.
+~
+~
+0 -1 10064
+D2
+It's too smoky to see.
+~
+~
+0 -1 10073
+D3
+It's too smoky to see.
+~
+~
+0 -1 10062
+S
+#10064
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10054
+D1
+It's too smoky to see.
+~
+~
+0 -1 10065
+D2
+It's too smoky to see.
+~
+~
+0 -1 10074
+D3
+It's too smoky to see.
+~
+~
+0 -1 10063
+S
+#10065
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10055
+D1
+It's too smoky to see.
+~
+~
+0 -1 10066
+D2
+It's too smoky to see.
+~
+~
+0 -1 10075
+D3
+It's too smoky to see.
+~
+~
+0 -1 10064
+S
+#10066
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10056
+D1
+It's too smoky to see.
+~
+~
+0 -1 10067
+D2
+It's too smoky to see.
+~
+~
+0 -1 10076
+D3
+It's too smoky to see.
+~
+~
+0 -1 10065
+S
+#10067
+Lake of Fire~
+You stand one the shore of a large lake of fire. The smoke and heat fill this
+enormous room. You can barely make out shapes of something moving
+withing the dancing flames of blue and gold..
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10057
+D1
+It's too smoky to see.
+~
+~
+0 -1 10068
+D2
+It's too smoky to see.
+~
+~
+0 -1 10077
+D3
+It's too smoky to see.
+~
+~
+0 -1 10066
+S
+#10068
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10058
+D1
+It's too smoky to see.
+~
+~
+0 -1 10069
+D2
+It's too smoky to see.
+~
+~
+0 -1 10078
+D3
+It's too smoky to see.
+~
+~
+0 -1 10067
+S
+#10069
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10059
+D2
+It's too smoky to see.
+~
+~
+0 -1 10079
+D3
+It's too smoky to see.
+~
+~
+0 -1 10068
+S
+#10070
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10060
+D1
+It's too smoky to see.
+~
+~
+0 -1 10071
+D2
+It's too smoky to see.
+~
+~
+0 -1 10080
+S
+#10071
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10061
+D1
+It's too smoky to see.
+~
+~
+0 -1 10072
+D2
+It's too smoky to see.
+~
+~
+0 -1 10081
+D3
+It's too smoky to see.
+~
+~
+0 -1 10070
+S
+#10072
+Hall of Fire~
+You are standing in a hallway made of fire. The walls are ablaze with
+yellow and blue flames. The smell of the hot air and sulfur burn your
+lungs as you inhale, and dry your mouth as you exhale. The stone floor
+burns at your feet and hungrily drinks up every drop of sweat as they
+fall from your body.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10062
+D1
+It's too smoky to see.
+~
+~
+0 -1 10073
+D2
+It's too smoky to see.
+~
+~
+0 -1 10082
+D3
+It's too smoky to see.
+~
+~
+0 -1 10071
+S
+#10073
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10063
+D1
+It's too smoky to see.
+~
+~
+0 -1 10074
+D2
+It's too smoky to see.
+~
+~
+0 -1 10083
+D3
+It's too smoky to see.
+~
+~
+0 -1 10072
+S
+#10074
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10064
+D1
+It's too smoky to see.
+~
+~
+0 -1 10075
+D2
+It's too smoky to see.
+~
+~
+0 -1 10084
+D3
+It's too smoky to see.
+~
+~
+0 -1 10073
+S
+#10075
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10065
+D1
+It's too smoky to see.
+~
+~
+0 -1 10076
+D2
+It's too smoky to see.
+~
+~
+0 -1 10085
+D3
+It's too smoky to see.
+~
+~
+0 -1 10074
+S
+#10076
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10066
+D1
+It's too smoky to see.
+~
+~
+0 -1 10077
+D2
+It's too smoky to see.
+~
+~
+0 -1 10086
+D3
+It's too smoky to see.
+~
+~
+0 -1 10075
+S
+#10077
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10067
+D1
+It's too smoky to see.
+~
+~
+0 -1 10078
+D2
+It's too smoky to see.
+~
+~
+0 -1 10087
+D3
+It's too smoky to see.
+~
+~
+0 -1 10076
+S
+#10078
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10068
+D1
+It's too smoky to see.
+~
+~
+0 -1 10079
+D2
+It's too smoky to see.
+~
+~
+0 -1 10088
+D3
+It's too smoky to see.
+~
+~
+0 -1 10077
+S
+#10079
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10069
+D2
+It's too smoky to see.
+~
+~
+0 -1 10089
+D3
+It's too smoky to see.
+~
+~
+0 -1 10078
+S
+#10080
+White Stone Archway~
+This is an ancient stone archway. Various faces of demons and other grim
+pictures are painted onto it. Stone gargoyles and demons glare down at
+you from atop the arch.
+A large white iron gates tower over you to the west.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10070
+D1
+It's too smoky to see.
+~
+~
+0 -1 10081
+D2
+It's too smoky to see.
+~
+~
+0 -1 10090
+D3
+The world of flesh.
+~
+~
+0 -1 3001
+E
+gates~
+These white iron gates are covered with grotesque faces and other
+creatures in various poses and acts of violence and lust. The gates
+seem to make your blood run cold, but you can feel the world of
+flash to the west...
+~
+S
+#10081
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10071
+D1
+It's too smoky to see.
+~
+~
+0 -1 10082
+D2
+It's too smoky to see.
+~
+~
+0 -1 10091
+D3
+It's too smoky to see.
+~
+~
+0 -1 10080
+S
+#10082
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10072
+D1
+It's too smoky to see.
+~
+~
+0 -1 10083
+D2
+It's too smoky to see.
+~
+~
+0 -1 10092
+D3
+It's too smoky to see.
+~
+~
+0 -1 10081
+S
+#10083
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10073
+D1
+It's too smoky to see.
+~
+~
+0 -1 10084
+D2
+It's too smoky to see.
+~
+~
+0 -1 10093
+D3
+It's too smoky to see.
+~
+~
+0 -1 10082
+S
+#10084
+Trapped souls~
+There are many souls trapped behind the walls of this room. Almost as if
+trapped beneath the surface of a frozen lake. Even the floor and ceiling
+show the screaming faces behind them.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10074
+D1
+It's too smoky to see.
+~
+~
+0 -1 10085
+D2
+It's too smoky to see.
+~
+~
+0 -1 10094
+D3
+It's too smoky to see.
+~
+~
+0 -1 10083
+S
+#10085
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10075
+D1
+It's too smoky to see.
+~
+~
+0 -1 10086
+D2
+It's too smoky to see.
+~
+~
+0 -1 10095
+D3
+It's too smoky to see.
+~
+~
+0 -1 10084
+S
+#10086
+Ancient Room~
+This is a very old and dusty room. It looks empty except for a few shards
+or bone and flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10076
+D1
+It's too smoky to see.
+~
+~
+0 -1 10087
+D2
+It's too smoky to see.
+~
+~
+0 -1 10096
+D3
+It's too smoky to see.
+~
+~
+0 -1 10085
+S
+#10087
+Hall of Fire~
+You are standing in a hallway made of fire. The walls are ablaze with
+yellow and blue flames. The smell of the hot air and sulfur burn your
+lungs as you inhale, and dry your mouth as you exhale. The stone floor
+burns at your feet and hungrily drinks up every drop of sweat as they
+fall from your body.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10077
+D1
+It's too smoky to see.
+~
+~
+0 -1 10088
+D2
+It's too smoky to see.
+~
+~
+0 -1 10097
+D3
+It's too smoky to see.
+~
+~
+0 -1 10086
+S
+#10088
+Hall of the Damned~
+   This hallway is a monument to the millions of damned souls in labyrinth.
+The walls are made up of various body parts and other unidentifiable
+things. Many of the faces that make up the wall scream out to you for
+help. Their arms desperately grasp at your clothing as you pass.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10078
+D1
+It's too smoky to see.
+~
+~
+0 -1 10089
+D2
+It's too smoky to see.
+~
+~
+0 -1 10098
+D3
+It's too smoky to see.
+~
+~
+0 -1 10087
+S
+#10089
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10079
+D2
+It's too smoky to see.
+~
+~
+0 -1 10099
+D3
+It's too smoky to see.
+~
+~
+0 -1 10088
+S
+#10090
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10080
+D1
+It's too smoky to see.
+~
+~
+0 -1 10091
+S
+#10091
+Mural of the Dead~
+You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole south wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10081
+D1
+It's too smoky to see.
+~
+~
+0 -1 10092
+D3
+It's too smoky to see.
+~
+~
+0 -1 10090
+S
+#10092
+Mural of the Dead~
+You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole south wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10082
+D1
+It's too smoky to see.
+~
+~
+0 -1 10093
+D3
+It's too smoky to see.
+~
+~
+0 -1 10091
+S
+#10093
+Mural of the Dead~
+You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole south wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10083
+D1
+It's too smoky to see.
+~
+~
+0 -1 10094
+D3
+It's too smoky to see.
+~
+~
+0 -1 10092
+S
+#10094
+Mural of the Dead~
+You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole south wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10084
+D1
+It's too smoky to see.
+~
+~
+0 -1 10095
+D3
+It's too smoky to see.
+~
+~
+0 -1 10093
+S
+#10095
+Mural of the Dead~
+You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole south wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10085
+D1
+It's too smoky to see.
+~
+~
+0 -1 10096
+D3
+It's too smoky to see.
+~
+~
+0 -1 10094
+S
+#10096
+Mural of the Dead~
+You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole south wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10086
+D1
+It's too smoky to see.
+~
+~
+0 -1 10097
+D3
+It's too smoky to see.
+~
+~
+0 -1 10095
+S
+#10097
+Mural of the Dead~
+You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole south wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10087
+D1
+It's too smoky to see.
+~
+~
+0 -1 10098
+D3
+It's too smoky to see.
+~
+~
+0 -1 10096
+S
+#10098
+Mural of the Dead~
+You stand before a large mural. The mural depicts mountains of dead
+bodies piled up to the sky. The mural covers the whole south wall from
+floor to ceiling. You can almost smell the stench of decaying flesh.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10088
+D1
+It's too smoky to see.
+~
+~
+0 -1 10099
+D3
+It's too smoky to see.
+~
+~
+0 -1 10097
+S
+#10099
+Living Walls~
+The walls here actually consist of greying and sinewy flesh - faces, hands,
+broken bones, feet, and toes jutting from the surface. You hear low moans
+of horror, pain, and sorrow issuing from the walls.
+~
+100 d 0
+D0
+It's too smoky to see.
+~
+~
+0 -1 10089
+D3
+It's too smoky to see.
+~
+~
+0 -1 10098
+S
+$

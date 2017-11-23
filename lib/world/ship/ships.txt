@@ -1,0 +1,85 @@
+#SHIP
+Vnum         0
+Name         sailboat~
+Descr        fishing~
+Speed        2
+Power        1
+Defense      3
+Equip        1
+Loads        300
+Health       5
+Size         1
+Skill        1
+End
+
+#SHIP
+Vnum         1
+Name         caravelle~
+Descr        light goods transport~
+Speed        5
+Power        5
+Defense      4
+Equip        3
+Loads        3400
+Health       15
+Size         6
+Skill        20
+End
+
+#SHIP
+Vnum         2
+Name         merchant-navy~
+Descr        heavy goods transport~
+Speed        4
+Power        4
+Defense      6
+Equip        8
+Loads        7000
+Health       20
+Size         10
+Skill        40
+End
+
+#SHIP
+Vnum         3
+Name         clipper~
+Descr        passengers transport or exploration~
+Speed        9
+Power        7
+Defense      7
+Equip        5
+Loads        5500
+Health       15
+Size         11
+Skill        50
+End
+
+#SHIP
+Vnum         4
+Name         galleon~
+Descr        war or exploration~
+Speed        7
+Power        12
+Defense      10
+Equip        12
+Loads        10000
+Health       30
+Size         14
+Skill        80
+End
+
+*#SHIP
+*Vnum         5
+*Name         juggernaut~
+*Descr        war or military expedition~
+*Speed        6
+*Power        20
+*Defense      26
+*Equip        20
+*Loads        15000
+*Health       50
+*Size         18
+*Skill        95
+*End
+
+#END

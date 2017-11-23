@@ -1,0 +1,25 @@
+#VEHICLE
+Vnum            0
+Name            cart
+Short_descr     a wooden cart~
+Descr           It's a wooden cart, used to carry goods~
+Speed           1
+Health          10
+Capacity        100
+Passengers      0
+Draft_mobs      1
+End
+
+#VEHICLE
+Vnum            1
+Name            wagon
+Short_descr     a four-wheeled wagon~
+Descr           It's a four-wheeled wagon, used to carry goods~
+Speed           2
+Health          20
+Capacity        300
+Passengers      1
+Draft_mobs      2
+End
+
+#END

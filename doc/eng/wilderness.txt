@@ -1,0 +1,244 @@
+/**************************************************************************
+ * #   #   #   ##   #  #  ###   ##   ##  ###       http://www.lyonesse.it *
+ * #    # #   #  #  ## #  #    #    #    #                                *
+ * #     #    #  #  # ##  ##    #    #   ##   ## ##  #  #  ##             *
+ * #     #    #  #  # ##  #      #    #  #    # # #  #  #  # #            *
+ * ###   #     ##   #  #  ###  ##   ##   ###  #   #  ####  ##    Ver. 1.0 *
+ *                                                                        *
+ * -Based on CircleMud & Smaug-     Copyright (c) 2001-2002 by Mithrandir *
+ * ********************************************************************** */
+
+Preamble:
+
+I'm not so good in english, so I'll be happy to receive a correct version of
+this document without all the errors i've surely put into! :-)))
+
+
+=========================
+Dynamic Wilderness Module
+=========================
+
+The dynamic wilderness module is built upon four linked parts:
+
+- coordinates
+- dynamic rooms
+- wild sectors
+- player map
+
+The LyonesseMUD ESTIMATED memory usage, with the standard 2000x2000 map,
+should range from a minimum of 10/11 Mb to a "practical" maximum of 30/35 Mb.
+As a matter of fact, wild loading depend on players moving around in the
+wilderness, so there is not a real maximum limit to memory usage.
+
+Wilderness files are in folder: \lyonesse\lib\world\wls
+
+lyonesse.bmp        graphical world map (bmp 256 colours, standard palette)
+./map				wild sectors files
+./life				wild sectors customized random encounter charts files
+
+
+-----------
+Coordinates
+-----------
+
+Coordinates are absolute, and range from 0 to WILD_n (it's possible to
+specify different measures for Y and X axis).
+
+Point 0 0 is the upper-left corner of the world map. Looking at the map,
+North is up, South is down, East is right and West is left.
+
+Movements to North  decrease Y coordinate;
+Movements to South  increase Y coordinate;
+Movements to West   decrease X coordinate;
+Movements to East   increase X coordinate;
+
+Other movements ( NW, NE, SW, SE ) cause boths;
+
+The lone structure with coordinates is the room structure. Objects, Mobiles,
+Ships and Vehicles don't have coordinates but get those the room they are in.
+
+Buildings have coordinates, but only for their placement at boot.
+
+
+-----
+Rooms
+-----
+
+Wild rooms are normal rooms that are loaded in memory only when needed and
+unloaded when are needed no longer.
+
+These rooms, when loaded, are assigned to virtual zone WILD_ZONE.
+
+When loaded, these rooms are NOT added to the World hash table. A special
+bidimensional hash table is used to handle wild rooms.
+
+It's important to note that NO SPECIAL CARE is needed to handle functions,
+actions or events when using wild rooms. Practically, they are "true" rooms
+and the code handle them exactly as normal zone rooms.
+
+But how the code handle dynamic room creation?
+
+The get_exit() function first look for an exit from the current room in 
+the given direction. If there are no exits, and we are in the WILD_ZONE,
+the code calculates the target room coordinates, and if are valid (no
+special sectors like walls, zone_border et similia) and no room has been
+already loaded there, it first creates the room and then creates an exit
+from the room we are to the target room.
+
+This is the dynamic wilderness base.
+
+A special case are rooms that have exits on normal zone. In fact, to avoid
+unnecessary and time-consuming elaboration in get_exit(), for each exit to
+a normal zone, at boot time will be loaded and arranged nine wild rooms, the
+one that actually contain the exit and the surrounding eight rooms.
+That's needed because when moving from one of these eight to the room that
+contain the zone exit players must be moved into the zone and not to the real
+wild room.
+
+
+Room loading criteria are:
+
+- player/mob movement to room's coordinates;
+- vehicle movement to room's coordinates;
+- loading an object at room's coordinates;
+- loading a building at room's coordinates;
+- loading a ship at room's coordinates;
+- initializing an event at room's coordinates;
+- loading special location at room's coordinates;
+
+To be unloaded room must not contain:
+
+- players/mobs
+- objects
+- ships
+- buildings
+- vehicles
+- spells
+- events
+- special locations
+
+Moreover, rooms that contain and surround exits to zones will not be unloaded.
+
+
+------------
+Wild Sectors
+------------
+
+Each wild sector is a 20x20 rooms square. Wild sectors are, like rooms,
+dynamics, and follows the same load/unload 'need' rule.
+
+There is not a single bidimensional array because of memory usage. In fact
+each wild sector contain data for weather, life and resources. This could
+not be afforded in case of an entirely loaded map. The amount of used 
+memory would be... catastrophic!!
+
+The wild sector is identified starting from room coordinates with the formula:
+
+int y = coord->y / MAP_SIZE * MAP_SIZE;
+int x = coord->x / MAP_SIZE * MAP_SIZE;
+
+where MAP_SIZE is 20 (in standard).
+
+By this way, for example, every rooms with Y from 60 to 79 will result an
+Y = 60 by integer truncation.
+
+When a wild sector must be loaded the code, after calculating coordinates,
+reads from file the map and the data and creates the sector.
+
+The lone load/unload criterium for wild sectors is if it has room loaded.
+If the code must loads a room in that sector and the sector is not loaded,
+it loads the sector too. When the last room in sector is unloaded, the
+code unloads the sector too.
+
+
+----------
+Player Map
+----------
+
+Because of dynamic nature of wild sectors and missing a wilderness "static"
+map, to be able to display an ascii map to each player, the code dynamically
+creates a map of the sector the player is in plus the surrounding eight
+sectors; these are NOT loaded in memory, simply appear as is.
+
+The player map is stored into **wildmap (in PLAYER_SPECIAL_DATA). Each time
+the player move between wild sectors it will be regenerated.
+
+This is NOT the map the player see! The player map is used by the code in
+wild.map.c to draws the REAL map that take into account the chosen display
+style, active spell, buildings, special locations, mob and other players,
+and so on. Eventually, this elaborated map is sent to the player.
+
+The player will see a square of 13x17 size circa, that will be rounded at
+the corner by visual ray. There's not difference between rear and front view,
+assuming a 360' view.
+
+The visual ray will be limited by weather, time and moon phase.
+
+It's not implemented an effect of line-of-view. Feel free to implement it
+by yourself!! :-)))
+
+
+Here an example of what a player will see:
+
+Road
+     .______     
+    .._______    
+   ...________   
+  ......H______  
+  ..,,,,:..____  
+  ..,,,,:,,....  
+ ..,,,,,#,,,,,,, 
+  ,,,,II@II,,,,  
+  ,,,,I   I,,,,  
+  ,,,,I   I,,,,  
+   ,,,IIIII,,,   
+    ,,,,,,,,,    
+     ,,,,,,,     
+
+
+Each player can choose between two drawing methods:
+
+- symobl map		(use: ,.;:? etc.)
+- letter map		(use: afMnr etc.)
+
+The map can be coloured or black-n-white.
+
+At last, there is a compact style that show a 5x7 size square.
+
+
+--------------------------
+Appendix A - Terrain Types
+--------------------------
+
+These below are the terrain types that are used in map drawing. There are
+others types that are reserved for internal usage.
+
+----------------------------------
+Coastline
+Artic
+Sea
+Shallows
+River
+River (Navigable)
+Hill
+Mountain
+Jungle
+Forest
+Forested Hill
+Field
+Plain
+Wasteland
+Desert
+Mountain Peak
+Beach
+Plateau
+Road
+Swamp
+Reef
+Forested Mountain
+Bridge
+Port
+Ford
+Zone Border
+Zone Inside
+Zone Exit

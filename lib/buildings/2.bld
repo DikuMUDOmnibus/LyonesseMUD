@@ -1,0 +1,24 @@
+#BUILDING
+Vnum          2
+Type          2
+Coord         953 1182
+Size          1
+Owner_Id      1
+Owner_Type    1
+Enter_Type    0
+Defense       12 12
+Health        10 10
+Keywords      stable~
+Description   a stable~
+End
+
+#ROOMS
+#0
+The Stable Inside~
+You are in the lone room of the stable.
+~
+ad 0 0 0
+S
+$
+
+#END

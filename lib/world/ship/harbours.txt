@@ -1,0 +1,20 @@
+*Port List:    Y    X    Name
+#HARBOUR       949  1174 Midgaard~
+#HARBOUR       1063 1216 Rome~
+
+#COURSE
+Vnum           1
+Name           Midgaard to Rome~
+Port_Orig      949 1174
+Port_Dest      1063 1216
+Step           953 1168
+Step           970 1181
+Step           982 1184
+Step           994 1189
+Step           1011 1196
+Step           1028 1203
+Step           1040 1207
+Step           1058 1208
+End
+
+#END

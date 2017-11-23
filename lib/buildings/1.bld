@@ -1,0 +1,25 @@
+#BUILDING
+Vnum          1
+Type          3
+Coord         953 1182
+Size          1
+Owner_Id      1
+Owner_Type    1
+Enter_Type    0
+Defense       16 16
+Health        13 13
+Keywords      trading post~
+Description   a trading post~
+TradingPost   1
+End
+
+#ROOMS
+#0
+The Trading Post Inside~
+You are in the lone room of the Trading Post.
+~
+ad 0 0 0
+S
+$
+
+#END

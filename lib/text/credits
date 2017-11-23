@@ -1,0 +1,71 @@
+(lib/text/credits)
+
+                           --- LyonesseMUD 1.0 ---
+
+LyonesseMUD was developed from CircleMUD and SMAUG, plus minor things taken
+from others codebases, by Fabrizio Baldi (aka Mithrandir).
+
+A great help has come from Edoardo Marone (aka Ardoz), who has developed the
+Economy and Trading module and the Item Production module. It's really a pity
+he's not a coder!!! :-))
+
+Type HELP LYONESSEMUD for more information.
+
+============================================================================
+
+                    C  I  R  C  L  E  M  U  D     3  .  0
+
+
+CircleMUD was developed from DikuMUD (Gamma 0.0) by Jeremy "Ras" Elson at
+Johns Hopkins University's Department of Computer Science.  All code unique
+to CircleMUD is protected under a copyright by the Trustees of the Johns
+Hopkins University.
+
+CircleMUD is freeware and can be downloaded via anonymous FTP from
+ftp.circlemud.org or ftp2.circlemud.org in pub/CircleMUD.  Its author can
+be contacted at jelson@circlemud.org.
+
+Type HELP CIRCLEMUD for more information.
+
+============================================================================
+
+                   Original game idea, concept, and design:
+
+          Katja Nyboe               [Superwoman] (katz@freja.diku.dk)
+          Tom Madsen              [Stormbringer] (noop@freja.diku.dk)
+          Hans Henrik Staerfeldt           [God] (bombman@freja.diku.dk)
+          Michael Seifert                 [Papi] (seifert@freja.diku.dk)
+          Sebastian Hammer               [Quinn] (quinn@freja.diku.dk)
+
+------------------------------------------------------------------------------
+Additional contributions from Michael Curran, Bill Wisner, Mads Haar, and
+Stephan Dahl.
+
+Originally developed at:
+  DIKU - The Department of Computer Science at the University of Copenhagen.
+
+=================================================================================
+
+                               LyonesseMUD Credits
+=================================================================================
+Credit is due to the authors of the following code patches and/or snippets, that
+I have used "as is" or just taken for inspiration:
+
+Colour Codes                      Jorgen Sigvardsson and Jason Berg
+Sorted do_who                     George Greer
+Mob Stacking                      Patrick Dughi <dughi@imaxx.net>
+Room affections                   The Arrow
+Maze Code                         Doppleganger Software
+DG Events                         Eric Green
+Introduction System               Gary McNickle <gary@dharvest.com>
+Money code                        Locke ( from NiMUD codebase )
+Study skill                       Absalom <clap@wolfenet.com>
+Mount Code                        Daniel Koepke
+Hidden Doors                      Joe Frohne <frohne@POST.ITS.MCW.EDU>
+Item Condition                    Zeran ( from CthulhuMud codebase )
+Ranged Weapon                     Scott Warren & Garadon <danielh@llamas.cnu.edu>
+Line Input code                   Jim Persson, Mike Breuer & Akuma
+
+
+If I've forgotten someone or something, please let me know so I can update this file
+==================================================================================

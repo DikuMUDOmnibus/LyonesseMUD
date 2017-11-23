@@ -1,0 +1,87 @@
+#0
+The Stern~
+   You are astern.
+~
+0 31
+D0
+You see the Bow.
+~
+~
+0 -1 1
+S
+#1
+The Bow~
+   You are at the bow.
+~
+0 33
+D2
+You see the Stern.
+~
+~
+0 -1 0
+D5
+You see the underdeck.
+~
+~
+0 -1 2
+S
+#2
+The Hallway~
+   You are in a hallway underdeck.
+~
+0 34
+D0
+You see the door of the hold.
+~
+~
+0 -1 3
+D1
+You see the door of a cabin.
+~
+~
+0 -1 4
+D3
+You see the door of a cabin.
+~
+~
+0 -1 5
+D4
+You see the bow.
+~
+~
+0 -1 1
+S
+#3
+The Hold~
+   You are in the Hold.
+~
+0 36
+D2
+You see the hallway.
+~
+~
+0 -1 2
+S
+#4
+A Cabin~
+   You are in a small underdeck cabin.
+~
+0 35
+D3
+You see the hallway.
+~
+~
+0 -1 2
+S
+#5
+A Cabin~
+   You are in a small underdeck cabin.
+~
+0 35
+D1
+You see the hallway.
+~
+~
+0 -1 2
+S
+$

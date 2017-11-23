@@ -1,0 +1,36 @@
+How to use it:
+
+Wherever whenever you feel like adding some color (for those who have
+colorlevel >= NORMAL) you just do something like this:
+
+&1Red&0 &4Blue&0 and so on.. Works in room_descs, gossips, tells, you name it.
+
+Here's a list of the color-codes:
+
+0 Normal attributes
+1 red
+2 green
+3 yellow
+4 blue
+5 magenta
+6 cyan
+7 white
+8 bold
+9 black
+
+u underline
+d dark
+b bright
+R red bground
+G green brgound
+B Blue bground
+Y yellow brgound
+M magenta bground
+C Cyan bground
+W white bground
+S black bground (S as in Svart (swedish))
+& the character &
+
+Anything other than these characters, will produce nothing.
+
+
